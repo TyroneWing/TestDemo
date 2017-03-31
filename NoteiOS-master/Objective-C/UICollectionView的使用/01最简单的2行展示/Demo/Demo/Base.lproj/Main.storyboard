@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h4g-Ep-gm6">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+    </dependencies>
+    <scenes>
+        <!--支付宝布局-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LpA-NP-CXb">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mXR-KE-vLC">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="JjW-KY-VL2"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="cX6-8I-Bd1"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LpA-NP-CXb" secondAttribute="bottom" id="I9r-nr-tTK"/>
+                            <constraint firstAttribute="trailing" secondItem="LpA-NP-CXb" secondAttribute="trailing" id="L9M-Q4-Wzz"/>
+                            <constraint firstItem="LpA-NP-CXb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RtY-5J-WVY"/>
+                            <constraint firstItem="LpA-NP-CXb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nD0-nX-H7v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="支付宝布局" id="6pu-R1-vKK">
+                        <barButtonItem key="rightBarButtonItem" title="刷新" id="kXl-cC-l4W">
+                            <connections>
+                                <action selector="reload:" destination="BYZ-38-t0r" id="xAa-4o-kGf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="LpA-NP-CXb" id="3Gc-8W-0W7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="-209"/>
+        </scene>
+        <!--瀑布流（第一步）-->
+        <scene sceneID="Ara-HA-CjO">
+            <objects>
+                <viewController id="yZ5-kL-S5i" customClass="IHWaterfallVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FCa-GJ-w5h"/>
+                        <viewControllerLayoutGuide type="bottom" id="xXN-ke-pLo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T7f-c7-aez">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aQo-si-KJc">
+                                <frame key="frameInset" width="600" height="600"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TN3-dF-gvc">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="yZ5-kL-S5i" id="aVj-md-J6c"/>
+                                    <outlet property="delegate" destination="yZ5-kL-S5i" id="Hcs-G6-QvO"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aQo-si-KJc" firstAttribute="top" secondItem="T7f-c7-aez" secondAttribute="top" id="9JU-8N-crr"/>
+                            <constraint firstItem="aQo-si-KJc" firstAttribute="leading" secondItem="T7f-c7-aez" secondAttribute="leading" id="Kyr-va-H8e"/>
+                            <constraint firstItem="xXN-ke-pLo" firstAttribute="top" secondItem="aQo-si-KJc" secondAttribute="bottom" id="o8s-Ma-q78"/>
+                            <constraint firstAttribute="trailing" secondItem="aQo-si-KJc" secondAttribute="trailing" id="suw-Jt-MXy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="瀑布流（第一步）" id="LJg-MM-bJn">
+                        <barButtonItem key="rightBarButtonItem" title="瀑布流优化版" id="xUQ-Nf-XcK">
+                            <connections>
+                                <segue destination="Ct4-sp-wnn" kind="push" id="95V-gF-tAU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="waterfallCollection" destination="aQo-si-KJc" id="aZR-U4-oy8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ECV-Cp-I4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-273" y="-223"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HPm-6p-hV6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h4g-Ep-gm6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rWK-fo-44N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dKN-Uf-Qxi" kind="relationship" relationship="rootViewController" id="Mxj-5O-4zH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JOT-vG-X4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-406" y="-110"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rSm-TI-zeV">
+            <objects>
+                <viewController id="dKN-Uf-Qxi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B53-AV-frl"/>
+                        <viewControllerLayoutGuide type="bottom" id="exA-fA-k01"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K1u-X4-VYh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="shd-PS-dCu">
+                        <rightBarButtonItems>
+                            <barButtonItem title="支付宝" id="Eld-A3-uEc">
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="Sh8-1i-0XE"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="瀑布流" id="lQB-PK-nSZ">
+                                <connections>
+                                    <segue destination="yZ5-kL-S5i" kind="push" id="rJp-f3-iAt"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="横向" id="Vwj-wU-4Cv">
+                                <connections>
+                                    <segue destination="1hj-kS-jac" kind="push" id="fJ8-Z7-ppL"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gry-T7-jhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-738" y="278"/>
+        </scene>
+        <!--WaterfallVC3-->
+        <scene sceneID="vwN-hs-Tu4">
+            <objects>
+                <viewController id="1hj-kS-jac" customClass="IHWaterfallVC3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KjN-xa-VBd"/>
+                        <viewControllerLayoutGuide type="bottom" id="nxg-QW-Wr8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="70N-Cv-cqX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="X4f-S5-mYg">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MSC-Ym-3nJ">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1hj-kS-jac" id="tqO-07-LzH"/>
+                                    <outlet property="delegate" destination="1hj-kS-jac" id="Dx3-Fu-1vs"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X4f-S5-mYg" firstAttribute="top" secondItem="70N-Cv-cqX" secondAttribute="top" id="CdV-4Z-Cz4"/>
+                            <constraint firstItem="X4f-S5-mYg" firstAttribute="leading" secondItem="70N-Cv-cqX" secondAttribute="leading" id="Z19-VX-nS1"/>
+                            <constraint firstItem="nxg-QW-Wr8" firstAttribute="top" secondItem="X4f-S5-mYg" secondAttribute="bottom" id="cMt-gR-dcM"/>
+                            <constraint firstAttribute="trailing" secondItem="X4f-S5-mYg" secondAttribute="trailing" id="oZ0-pT-6lU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="01V-xs-XRP"/>
+                    <connections>
+                        <outlet property="waterfallCollection" destination="X4f-S5-mYg" id="FMa-qQ-Dz3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0oF-1M-YGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="272"/>
+        </scene>
+        <!--瀑布流优化版-->
+        <scene sceneID="bql-rG-eTC">
+            <objects>
+                <viewController id="Ct4-sp-wnn" customClass="IHWaterfallVC2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XAP-Hc-nNG"/>
+                        <viewControllerLayoutGuide type="bottom" id="NR9-fb-4UW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="voZ-gw-wWz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xbj-hm-aMM">
+                                <frame key="frameInset" width="600" height="600"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gxE-pm-3YY">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ct4-sp-wnn" id="xH7-H4-bOD"/>
+                                    <outlet property="delegate" destination="Ct4-sp-wnn" id="uDk-LH-SJ0"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xbj-hm-aMM" firstAttribute="top" secondItem="voZ-gw-wWz" secondAttribute="top" id="8Z8-9t-mFI"/>
+                            <constraint firstItem="xbj-hm-aMM" firstAttribute="leading" secondItem="voZ-gw-wWz" secondAttribute="leading" id="PD0-Z1-v43"/>
+                            <constraint firstAttribute="trailing" secondItem="xbj-hm-aMM" secondAttribute="trailing" id="Skc-2x-YHw"/>
+                            <constraint firstItem="NR9-fb-4UW" firstAttribute="top" secondItem="xbj-hm-aMM" secondAttribute="bottom" id="h6u-hH-C8h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="瀑布流优化版" id="mOf-WM-Igq"/>
+                    <connections>
+                        <outlet property="waterfall2CollectionView" destination="xbj-hm-aMM" id="zFU-ji-ic5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9n-9S-7l4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255" y="-110"/>
+        </scene>
+    </scenes>
+</document>

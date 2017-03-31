@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="KGk-i7-Jjw" customClass="BMSimulationFileDownloadCell">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XgM-68-QkZ">
+                        <rect key="frame" x="60" y="53" width="177" height="2"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otM-jj-355">
+                        <rect key="frame" x="237" y="0.0" width="40" height="109"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Pba-1U-Dyd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zov-tm-X0s">
+                        <rect key="frame" x="277" y="10" width="50" height="88.5"/>
+                        <color key="backgroundColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="5DG-0k-6Sk"/>
+                        </constraints>
+                        <state key="normal" title="下载">
+                            <color key="titleColor" red="1" green="0.096869756710000005" blue="0.036231124160000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文件1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJg-Mt-M3j">
+                        <rect key="frame" x="5" y="0.0" width="25.5" height="108.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XgM-68-QkZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3k1-uC-xs7"/>
+                    <constraint firstItem="otM-jj-355" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4cS-Pt-gHT"/>
+                    <constraint firstItem="XgM-68-QkZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="6VZ-va-GX2"/>
+                    <constraint firstItem="Zov-tm-X0s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="BWA-I5-ZXo"/>
+                    <constraint firstItem="fJg-Mt-M3j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HXa-Xd-mAe"/>
+                    <constraint firstItem="Zov-tm-X0s" firstAttribute="leading" secondItem="otM-jj-355" secondAttribute="trailing" id="M44-os-hMp"/>
+                    <constraint firstAttribute="bottom" secondItem="otM-jj-355" secondAttribute="bottom" id="OVR-AW-0FY"/>
+                    <constraint firstAttribute="bottom" secondItem="Zov-tm-X0s" secondAttribute="bottom" constant="10" id="Sdj-pB-EWr"/>
+                    <constraint firstAttribute="trailing" secondItem="Zov-tm-X0s" secondAttribute="trailing" constant="10" id="XGq-nZ-MTf"/>
+                    <constraint firstItem="fJg-Mt-M3j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="XyC-G7-WS0"/>
+                    <constraint firstAttribute="trailing" secondItem="XgM-68-QkZ" secondAttribute="trailing" constant="100" id="ll8-73-9aA"/>
+                    <constraint firstAttribute="bottom" secondItem="fJg-Mt-M3j" secondAttribute="bottom" id="n5s-r1-Bjj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="downloadButton" destination="Zov-tm-X0s" id="5bk-c4-mXP"/>
+                <outlet property="fileName" destination="fJg-Mt-M3j" id="Bam-J1-AfG"/>
+                <outlet property="progressFloatView" destination="otM-jj-355" id="Nq5-nW-fVX"/>
+                <outlet property="progressView" destination="XgM-68-QkZ" id="EhB-2e-nzH"/>
+            </connections>
+            <point key="canvasLocation" x="-650" y="-169"/>
+        </tableViewCell>
+    </objects>
+</document>

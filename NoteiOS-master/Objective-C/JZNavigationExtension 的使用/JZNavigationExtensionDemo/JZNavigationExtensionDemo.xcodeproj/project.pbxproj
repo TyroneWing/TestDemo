@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3275B2641DFAAF58001E2524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3275B2631DFAAF58001E2524 /* main.m */; };
+		3275B2671DFAAF58001E2524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3275B2661DFAAF58001E2524 /* AppDelegate.m */; };
+		3275B26A1DFAAF58001E2524 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3275B2691DFAAF58001E2524 /* ViewController.m */; };
+		3275B26D1DFAAF58001E2524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3275B26B1DFAAF58001E2524 /* Main.storyboard */; };
+		3275B26F1DFAAF59001E2524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3275B26E1DFAAF59001E2524 /* Assets.xcassets */; };
+		3275B2721DFAAF59001E2524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3275B2701DFAAF59001E2524 /* LaunchScreen.storyboard */; };
+		3275B27D1DFAAF59001E2524 /* JZNavigationExtensionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3275B27C1DFAAF59001E2524 /* JZNavigationExtensionDemoTests.m */; };
+		3275B2881DFAAF59001E2524 /* JZNavigationExtensionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3275B2871DFAAF59001E2524 /* JZNavigationExtensionDemoUITests.m */; };
+		6D5C21B25C934B32974E585C /* libPods-JZNavigationExtensionDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 263163997E3121590115611E /* libPods-JZNavigationExtensionDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3275B2791DFAAF59001E2524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3275B2571DFAAF58001E2524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3275B25E1DFAAF58001E2524;
+			remoteInfo = JZNavigationExtensionDemo;
+		};
+		3275B2841DFAAF59001E2524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3275B2571DFAAF58001E2524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3275B25E1DFAAF58001E2524;
+			remoteInfo = JZNavigationExtensionDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17A1E9CF8283B3EBB14A557E /* Pods-JZNavigationExtensionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZNavigationExtensionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JZNavigationExtensionDemo/Pods-JZNavigationExtensionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		263163997E3121590115611E /* libPods-JZNavigationExtensionDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JZNavigationExtensionDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29F68097A99D3048A3BF1F3E /* libPods-JZNavigationExtensionDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JZNavigationExtensionDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3275B25F1DFAAF58001E2524 /* JZNavigationExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JZNavigationExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3275B2631DFAAF58001E2524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3275B2651DFAAF58001E2524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3275B2661DFAAF58001E2524 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3275B2681DFAAF58001E2524 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3275B2691DFAAF58001E2524 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3275B26C1DFAAF58001E2524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3275B26E1DFAAF59001E2524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3275B2711DFAAF59001E2524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3275B2731DFAAF59001E2524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3275B2781DFAAF59001E2524 /* JZNavigationExtensionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JZNavigationExtensionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3275B27C1DFAAF59001E2524 /* JZNavigationExtensionDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZNavigationExtensionDemoTests.m; sourceTree = "<group>"; };
+		3275B27E1DFAAF59001E2524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3275B2831DFAAF59001E2524 /* JZNavigationExtensionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JZNavigationExtensionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3275B2871DFAAF59001E2524 /* JZNavigationExtensionDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZNavigationExtensionDemoUITests.m; sourceTree = "<group>"; };
+		3275B2891DFAAF59001E2524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AF6AA7BD7B4FD4B410C83F0 /* Pods-JZNavigationExtensionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZNavigationExtensionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JZNavigationExtensionDemo/Pods-JZNavigationExtensionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A00F418E30150DA12B0654EE /* libPods-JZNavigationExtensionDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JZNavigationExtensionDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3275B25C1DFAAF58001E2524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5C21B25C934B32974E585C /* libPods-JZNavigationExtensionDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3275B2751DFAAF59001E2524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3275B2801DFAAF59001E2524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3275B2561DFAAF58001E2524 = {
+			isa = PBXGroup;
+			children = (
+				3275B2611DFAAF58001E2524 /* JZNavigationExtensionDemo */,
+				3275B27B1DFAAF59001E2524 /* JZNavigationExtensionDemoTests */,
+				3275B2861DFAAF59001E2524 /* JZNavigationExtensionDemoUITests */,
+				3275B2601DFAAF58001E2524 /* Products */,
+				5C2B708A2146C9B6080FA3E5 /* Pods */,
+				6F4D9F05F1B3CFDAE05F9BB7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3275B2601DFAAF58001E2524 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3275B25F1DFAAF58001E2524 /* JZNavigationExtensionDemo.app */,
+				3275B2781DFAAF59001E2524 /* JZNavigationExtensionDemoTests.xctest */,
+				3275B2831DFAAF59001E2524 /* JZNavigationExtensionDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3275B2611DFAAF58001E2524 /* JZNavigationExtensionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3275B2651DFAAF58001E2524 /* AppDelegate.h */,
+				3275B2661DFAAF58001E2524 /* AppDelegate.m */,
+				3275B2681DFAAF58001E2524 /* ViewController.h */,
+				3275B2691DFAAF58001E2524 /* ViewController.m */,
+				3275B26B1DFAAF58001E2524 /* Main.storyboard */,
+				3275B26E1DFAAF59001E2524 /* Assets.xcassets */,
+				3275B2701DFAAF59001E2524 /* LaunchScreen.storyboard */,
+				3275B2731DFAAF59001E2524 /* Info.plist */,
+				3275B2621DFAAF58001E2524 /* Supporting Files */,
+			);
+			path = JZNavigationExtensionDemo;
+			sourceTree = "<group>";
+		};
+		3275B2621DFAAF58001E2524 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3275B2631DFAAF58001E2524 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3275B27B1DFAAF59001E2524 /* JZNavigationExtensionDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3275B27C1DFAAF59001E2524 /* JZNavigationExtensionDemoTests.m */,
+				3275B27E1DFAAF59001E2524 /* Info.plist */,
+			);
+			path = JZNavigationExtensionDemoTests;
+			sourceTree = "<group>";
+		};
+		3275B2861DFAAF59001E2524 /* JZNavigationExtensionDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3275B2871DFAAF59001E2524 /* JZNavigationExtensionDemoUITests.m */,
+				3275B2891DFAAF59001E2524 /* Info.plist */,
+			);
+			path = JZNavigationExtensionDemoUITests;
+			sourceTree = "<group>";
+		};
+		5C2B708A2146C9B6080FA3E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17A1E9CF8283B3EBB14A557E /* Pods-JZNavigationExtensionDemo.debug.xcconfig */,
+				4AF6AA7BD7B4FD4B410C83F0 /* Pods-JZNavigationExtensionDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6F4D9F05F1B3CFDAE05F9BB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				263163997E3121590115611E /* libPods-JZNavigationExtensionDemo.a */,
+				29F68097A99D3048A3BF1F3E /* libPods-JZNavigationExtensionDemoTests.a */,
+				A00F418E30150DA12B0654EE /* libPods-JZNavigationExtensionDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3275B25E1DFAAF58001E2524 /* JZNavigationExtensionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3275B28C1DFAAF59001E2524 /* Build configuration list for PBXNativeTarget "JZNavigationExtensionDemo" */;
+			buildPhases = (
+				AACB9F0A767B94067C515B61 /* [CP] Check Pods Manifest.lock */,
+				3275B25B1DFAAF58001E2524 /* Sources */,
+				3275B25C1DFAAF58001E2524 /* Frameworks */,
+				3275B25D1DFAAF58001E2524 /* Resources */,
+				AF7B8F0B77D4063C764D348D /* [CP] Embed Pods Frameworks */,
+				B0412837DB90ED34C5E5D0A6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JZNavigationExtensionDemo;
+			productName = JZNavigationExtensionDemo;
+			productReference = 3275B25F1DFAAF58001E2524 /* JZNavigationExtensionDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3275B2771DFAAF59001E2524 /* JZNavigationExtensionDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3275B28F1DFAAF59001E2524 /* Build configuration list for PBXNativeTarget "JZNavigationExtensionDemoTests" */;
+			buildPhases = (
+				3275B2741DFAAF59001E2524 /* Sources */,
+				3275B2751DFAAF59001E2524 /* Frameworks */,
+				3275B2761DFAAF59001E2524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3275B27A1DFAAF59001E2524 /* PBXTargetDependency */,
+			);
+			name = JZNavigationExtensionDemoTests;
+			productName = JZNavigationExtensionDemoTests;
+			productReference = 3275B2781DFAAF59001E2524 /* JZNavigationExtensionDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3275B2821DFAAF59001E2524 /* JZNavigationExtensionDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3275B2921DFAAF59001E2524 /* Build configuration list for PBXNativeTarget "JZNavigationExtensionDemoUITests" */;
+			buildPhases = (
+				3275B27F1DFAAF59001E2524 /* Sources */,
+				3275B2801DFAAF59001E2524 /* Frameworks */,
+				3275B2811DFAAF59001E2524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3275B2851DFAAF59001E2524 /* PBXTargetDependency */,
+			);
+			name = JZNavigationExtensionDemoUITests;
+			productName = JZNavigationExtensionDemoUITests;
+			productReference = 3275B2831DFAAF59001E2524 /* JZNavigationExtensionDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3275B2571DFAAF58001E2524 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = idhong.com;
+				TargetAttributes = {
+					3275B25E1DFAAF58001E2524 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8RB35RM424;
+						ProvisioningStyle = Automatic;
+					};
+					3275B2771DFAAF59001E2524 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8RB35RM424;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3275B25E1DFAAF58001E2524;
+					};
+					3275B2821DFAAF59001E2524 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8RB35RM424;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3275B25E1DFAAF58001E2524;
+					};
+				};
+			};
+			buildConfigurationList = 3275B25A1DFAAF58001E2524 /* Build configuration list for PBXProject "JZNavigationExtensionDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3275B2561DFAAF58001E2524;
+			productRefGroup = 3275B2601DFAAF58001E2524 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3275B25E1DFAAF58001E2524 /* JZNavigationExtensionDemo */,
+				3275B2771DFAAF59001E2524 /* JZNavigationExtensionDemoTests */,
+				3275B2821DFAAF59001E2524 /* JZNavigationExtensionDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3275B25D1DFAAF58001E2524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3275B2721DFAAF59001E2524 /* LaunchScreen.storyboard in Resources */,
+				3275B26F1DFAAF59001E2524 /* Assets.xcassets in Resources */,
+				3275B26D1DFAAF58001E2524 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3275B2761DFAAF59001E2524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3275B2811DFAAF59001E2524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AACB9F0A767B94067C515B61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF7B8F0B77D4063C764D348D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JZNavigationExtensionDemo/Pods-JZNavigationExtensionDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0412837DB90ED34C5E5D0A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JZNavigationExtensionDemo/Pods-JZNavigationExtensionDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3275B25B1DFAAF58001E2524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3275B26A1DFAAF58001E2524 /* ViewController.m in Sources */,
+				3275B2671DFAAF58001E2524 /* AppDelegate.m in Sources */,
+				3275B2641DFAAF58001E2524 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3275B2741DFAAF59001E2524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3275B27D1DFAAF59001E2524 /* JZNavigationExtensionDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3275B27F1DFAAF59001E2524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3275B2881DFAAF59001E2524 /* JZNavigationExtensionDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3275B27A1DFAAF59001E2524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3275B25E1DFAAF58001E2524 /* JZNavigationExtensionDemo */;
+			targetProxy = 3275B2791DFAAF59001E2524 /* PBXContainerItemProxy */;
+		};
+		3275B2851DFAAF59001E2524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3275B25E1DFAAF58001E2524 /* JZNavigationExtensionDemo */;
+			targetProxy = 3275B2841DFAAF59001E2524 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3275B26B1DFAAF58001E2524 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3275B26C1DFAAF58001E2524 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3275B2701DFAAF59001E2524 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3275B2711DFAAF59001E2524 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3275B28A1DFAAF59001E2524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3275B28B1DFAAF59001E2524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3275B28D1DFAAF59001E2524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17A1E9CF8283B3EBB14A557E /* Pods-JZNavigationExtensionDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = JZNavigationExtensionDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.JZNavigationExtensionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3275B28E1DFAAF59001E2524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF6AA7BD7B4FD4B410C83F0 /* Pods-JZNavigationExtensionDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = JZNavigationExtensionDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.JZNavigationExtensionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3275B2901DFAAF59001E2524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = JZNavigationExtensionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.JZNavigationExtensionDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JZNavigationExtensionDemo.app/JZNavigationExtensionDemo";
+			};
+			name = Debug;
+		};
+		3275B2911DFAAF59001E2524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = JZNavigationExtensionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.JZNavigationExtensionDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JZNavigationExtensionDemo.app/JZNavigationExtensionDemo";
+			};
+			name = Release;
+		};
+		3275B2931DFAAF59001E2524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = JZNavigationExtensionDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.JZNavigationExtensionDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JZNavigationExtensionDemo;
+			};
+			name = Debug;
+		};
+		3275B2941DFAAF59001E2524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = JZNavigationExtensionDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.JZNavigationExtensionDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JZNavigationExtensionDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3275B25A1DFAAF58001E2524 /* Build configuration list for PBXProject "JZNavigationExtensionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3275B28A1DFAAF59001E2524 /* Debug */,
+				3275B28B1DFAAF59001E2524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3275B28C1DFAAF59001E2524 /* Build configuration list for PBXNativeTarget "JZNavigationExtensionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3275B28D1DFAAF59001E2524 /* Debug */,
+				3275B28E1DFAAF59001E2524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3275B28F1DFAAF59001E2524 /* Build configuration list for PBXNativeTarget "JZNavigationExtensionDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3275B2901DFAAF59001E2524 /* Debug */,
+				3275B2911DFAAF59001E2524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3275B2921DFAAF59001E2524 /* Build configuration list for PBXNativeTarget "JZNavigationExtensionDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3275B2931DFAAF59001E2524 /* Debug */,
+				3275B2941DFAAF59001E2524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3275B2571DFAAF58001E2524 /* Project object */;
+}

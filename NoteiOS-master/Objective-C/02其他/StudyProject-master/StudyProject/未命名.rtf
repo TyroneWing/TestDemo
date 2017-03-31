@@ -1,0 +1,784 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset134 PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red65\green204\blue69;\red228\green124\blue72;\red255\green44\blue56;
+\red211\green24\blue149;\red0\green160\blue255;\red120\green109\blue255;\red35\green255\blue131;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab577
+\pard\tx577\pardeftab577\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \CocoaLigature0 //\cf1 \
+\cf2 //  HMLineView.m\cf1 \
+\cf2 //  01-
+\f1 \'bb\'f9\'b1\'be\'cd\'bc\'d0\'ce\'bb\'e6\'d6\'c6
+\f0 \cf1 \
+\cf2 //\cf1 \
+\cf2 //  Created by apple on 14-9-2.\cf1 \
+\cf2 //  Copyright (c) 2014
+\f1 \'c4\'ea
+\f0  itcast. All rights reserved.\cf1 \
+\cf2 //\cf1 \
+\
+\cf3 #import \cf4 "HMLineView.h"\cf3 \
+\cf1 \
+\cf5 @implementation\cf1  HMLineView\
+\
+- (\cf5 id\cf1 )initWithFrame:(\cf6 CGRect\cf1 )frame\
+\{\
+    \cf5 self\cf1  = [\cf5 super\cf1  \cf6 initWithFrame\cf1 :frame];\
+    \cf5 if\cf1  (\cf5 self\cf1 ) \{\
+        \cf2 // Initialization code\cf1 \
+    \}\
+    \cf5 return\cf1  \cf5 self\cf1 ;\
+\}\
+\
+\
+\cf2 // Only override drawRect: if you perform custom drawing.\cf1 \
+\cf2 // An empty implementation adversely affects performance during animation.\cf1 \
+\
+\cf2 /**\
+ *  
+\f1 \'ca\'b2\'c3\'b4\'b5\'f7\'d3\'c3\'a3\'ba\'b5\'b1\'c4\'e3\'ca\'d3\'cd\'bc\'b5\'da\'d2\'bb\'b4\'ce\'cf\'d4\'ca\'be\'b5\'c4\'ca\'b1\'ba\'f2\'be\'cd\'bb\'e1\'b5\'f7\'d3\'c3
+\f0 \
+ *  
+\f1 \'d7\'f7\'d3\'c3\'a3\'ba\'bb\'e6\'cd\'bc
+\f0 \
+ *  @param rect = self.bounds\
+ */\cf1 \
+- (\cf5 void\cf1 )drawRect:(\cf6 CGRect\cf1 )rect\
+\{\
+    \cf2 // 1.
+\f1 \'bb\'f1\'c8\'a1\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextRef\cf1  ctx = \cf6 UIGraphicsGetCurrentContext\cf1 ();\
+    \
+    \cf2 // 2.
+\f1 \'c6\'b4\'bd\'d3\'c2\'b7\'be\'b6
+\f0 \cf1 \
+    \cf6 UIBezierPath\cf1  *path = [\cf6 UIBezierPath\cf1  \cf6 bezierPath\cf1 ];\
+    \
+    \cf6 CGPoint\cf1  startP = \cf6 CGPointMake\cf1 (\cf7 10\cf1 , \cf7 125\cf1 );\
+    \cf6 CGPoint\cf1  endP = \cf6 CGPointMake\cf1 (\cf7 240\cf1 , \cf7 125\cf1 );\
+    \cf6 CGPoint\cf1  controlP = \cf6 CGPointMake\cf1 (\cf7 125\cf1 , \cf7 0\cf1 );\
+    [path \cf6 moveToPoint\cf1 :startP];\
+    [path \cf6 addQuadCurveToPoint\cf1 :endP \cf6 controlPoint\cf1 :controlP];\
+    \
+    \cf2 // 3.
+\f1 \'b0\'d1\'c2\'b7\'be\'b6\'cc\'ed\'bc\'d3\'b5\'bd\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextAddPath\cf1 (ctx, path.\cf6 CGPath\cf1 );\
+    \
+    \cf2 // 4.
+\f1 \'e4\'d6\'c8\'be\'c9\'cf\'cf\'c2\'ce\'c4\'b5\'bd\'ca\'d3\'cd\'bc
+\f0 \cf1 \
+    \cf6 CGContextStrokePath\cf1 (ctx);\
+    \
+\}\
+\
+- (\cf5 void\cf1 )draw2Line\
+\{\
+    \cf2 // 1.
+\f1 \'bb\'f1\'c8\'a1\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextRef\cf1  ctx = \cf6 UIGraphicsGetCurrentContext\cf1 ();\
+    \
+    \cf2 // 2.
+\f1 \'c6\'b4\'bd\'d3\'c2\'b7\'be\'b6
+\f0 \cf1 \
+    \cf6 UIBezierPath\cf1  *path = [\cf6 UIBezierPath\cf1  \cf6 bezierPath\cf1 ];\
+    \
+    \cf2 // 
+\f1 \'c9\'e8\'d6\'c3\'c6\'f0\'b5\'e3
+\f0 \cf1 \
+    [path \cf6 moveToPoint\cf1 :\cf6 CGPointMake\cf1 (\cf7 10\cf1 , \cf7 125\cf1 )];\
+    \
+    \cf2 // 
+\f1 \'cc\'ed\'bc\'d3\'d2\'bb\'cc\'f5\'cf\'df\'b5\'bd\'c4\'b3\'b8\'f6\'b5\'e3
+\f0 \cf1 \
+    [path \cf6 addLineToPoint\cf1 :\cf6 CGPointMake\cf1 (\cf7 230\cf1 , \cf7 125\cf1 )];\
+    \
+    \cf2 //    // 
+\f1 \'c9\'e8\'d6\'c3\'c6\'f0\'b5\'e3
+\f0 \cf1 \
+    \cf2 //    [path moveToPoint:CGPointMake(10, 10)];\cf1 \
+    \cf2 //\cf1 \
+    \cf2 //    // 
+\f1 \'cc\'ed\'bc\'d3\'d2\'bb\'cc\'f5\'cf\'df\'b5\'bd\'c4\'b3\'b8\'f6\'b5\'e3
+\f0 \cf1 \
+    \cf2 //    [path addLineToPoint:CGPointMake(125, 100)];\cf1 \
+    \
+    \cf6 UIBezierPath\cf1  *path1 = [\cf6 UIBezierPath\cf1  \cf6 bezierPath\cf1 ];\
+    \
+    [path1 \cf6 moveToPoint\cf1 :\cf6 CGPointMake\cf1 (\cf7 10\cf1 , \cf7 10\cf1 )];\
+    \
+    [path1 \cf6 addLineToPoint\cf1 :\cf6 CGPointMake\cf1 (\cf7 125\cf1 , \cf7 100\cf1 )];\
+\
+    [path1 \cf6 addLineToPoint\cf1 :\cf6 CGPointMake\cf1 (\cf7 125\cf1 , \cf7 20\cf1 )];\
+\
+    \
+    \cf2 // 3.
+\f1 \'b0\'d1\'c2\'b7\'be\'b6\'cc\'ed\'bc\'d3\'b5\'bd\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextAddPath\cf1 (ctx, path.\cf6 CGPath\cf1 );\
+    \cf6 CGContextAddPath\cf1 (ctx, path1.\cf6 CGPath\cf1 );\
+    \
+    \cf2 // 
+\f1 \'c9\'e8\'d6\'c3\'bb\'e6\'cd\'bc\'d7\'b4\'cc\'ac
+\f0 \cf1 \
+    \cf2 // 
+\f1 \'c9\'e8\'d6\'c3\'cf\'df\'bf\'ed
+\f0 \cf1 \
+    \cf6 CGContextSetLineWidth\cf1 (ctx, \cf7 1\cf1 );\
+    \cf6 CGContextSetLineCap\cf1 (ctx, \cf6 kCGLineCapRound\cf1 );\
+    \cf2 //    CGContextSetRGBStrokeColor(ctx, 1, 0, 0, 1);\cf1 \
+    [[\cf6 UIColor\cf1  \cf6 redColor\cf1 ] \cf6 set\cf1 ];\
+    \
+    \cf2 // 4.
+\f1 \'e4\'d6\'c8\'be\'c9\'cf\'cf\'c2\'ce\'c4\'b5\'bd\'ca\'d3\'cd\'bc
+\f0 \cf1 \
+    \cf6 CGContextStrokePath\cf1 (ctx);\
+\}\
+\
+- (\cf5 void\cf1 )drawLine\
+\{\
+    \cf2 // 1.
+\f1 \'bb\'f1\'c8\'a1\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf2 // CGContextRef CG CoreGraphics Ref 
+\f1 \'d2\'fd\'d3\'c3
+\f0 \cf1 \
+    \cf2 // 
+\f1 \'c4\'bf\'c7\'b0\'d1\'a7\'b5\'c4\'c9\'cf\'cf\'c2\'ce\'c4\'b6\'bc\'b8\'fa
+\f0 UIGraphics
+\f1 \'d3\'d0\'b9\'d8\'a3\'ac\'d2\'d4\'ba\'f3\'cf\'eb\'d6\'b1\'bd\'d3\'bb\'f1\'c8\'a1\'c9\'cf\'cf\'c2\'ce\'c4\'a3\'ac\'d6\'b1\'bd\'d3\'c7\'c3\'d2\'bb\'b8\'f6
+\f0 UIGraphics\cf1 \
+    \cf6 CGContextRef\cf1  ctx = \cf6 UIGraphicsGetCurrentContext\cf1 ();\
+    \
+    \cf2 // 2.
+\f1 \'c9\'e8\'d6\'c3\'bb\'e6\'cd\'bc\'d0\'c5\'cf\'a2
+\f0 (
+\f1 \'c6\'b4\'bd\'d3\'c2\'b7\'be\'b6
+\f0 )\cf1 \
+    \cf6 UIBezierPath\cf1  *path = [\cf6 UIBezierPath\cf1  \cf6 bezierPath\cf1 ];\
+    \
+    \cf2 // 
+\f1 \'c9\'e8\'d6\'c3\'c6\'f0\'b5\'e3
+\f0 \cf1 \
+    [path \cf6 moveToPoint\cf1 :\cf6 CGPointMake\cf1 (\cf7 10\cf1 , \cf7 10\cf1 )];\
+    \
+    \cf2 // 
+\f1 \'cc\'ed\'bc\'d3\'d2\'bb\'cc\'f5\'cf\'df\'b5\'bd\'c4\'b3\'b8\'f6\'b5\'e3
+\f0 \cf1 \
+    [path \cf6 addLineToPoint\cf1 :\cf6 CGPointMake\cf1 (\cf7 125\cf1 , \cf7 125\cf1 )];\
+    [path \cf6 addLineToPoint\cf1 :\cf6 CGPointMake\cf1 (\cf7 240\cf1 , \cf7 10\cf1 )];\
+    \cf2 // 3.
+\f1 \'b0\'d1\'c2\'b7\'be\'b6\'cc\'ed\'bc\'d3\'b5\'bd\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf2 // 
+\f1 \'d6\'b1\'bd\'d3\'b0\'d1
+\f0 UIKit
+\f1 \'b5\'c4\'c2\'b7\'be\'b6\'d7\'aa\'bb\'bb\'b3\'c9
+\f0 CoreGraphics
+\f1 \'a3\'ac
+\f0 CG
+\f1 \'bf\'aa\'cd\'b7\'be\'cd\'c4\'dc\'d7\'aa
+\f0 \cf1 \
+    \cf6 CGContextAddPath\cf1 (ctx, path.\cf6 CGPath\cf1 );\
+    \
+    \cf2 // 4.
+\f1 \'b0\'d1\'c9\'cf\'cf\'c2\'ce\'c4\'e4\'d6\'c8\'be\'b5\'bd\'ca\'d3\'cd\'bc
+\f0 \cf1 \
+    \cf2 // Stroke
+\f1 \'c3\'e8\'b1\'df
+\f0 \cf1 \
+    \cf6 CGContextStrokePath\cf1 (ctx);\
+\}\
+\
+\cf5 @end\cf1 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\cf2 //\cf1 \
+\cf2 //  HMShapeView.m\cf1 \
+\cf2 //  01-
+\f1 \'bb\'f9\'b1\'be\'cd\'bc\'d0\'ce\'bb\'e6\'d6\'c6
+\f0 \cf1 \
+\cf2 //\cf1 \
+\cf2 //  Created by apple on 14-9-2.\cf1 \
+\cf2 //  Copyright (c) 2014
+\f1 \'c4\'ea
+\f0  itcast. All rights reserved.\cf1 \
+\cf2 //\cf1 \
+\
+\cf3 #import \cf4 "HMShapeView.h"\cf3 \
+\cf1 \
+\cf5 @interface\cf1  \cf8 HMShapeView\cf1 ()\
+\
+\cf5 @property\cf1  (\cf5 nonatomic\cf1 , \cf5 weak\cf1 ) \cf6 UILabel\cf1  *label;\
+\
+\cf5 @end\cf1 \
+\
+\cf5 @implementation\cf1  HMShapeView\
+\
+- (\cf6 UILabel\cf1  *)label\
+\{\
+    \cf5 if\cf1  (\cf8 _label\cf1  == \cf5 nil\cf1 ) \{\
+        \cf6 UILabel\cf1  *label = [[\cf6 UILabel\cf1  \cf6 alloc\cf1 ] \cf6 initWithFrame\cf1 :\cf6 CGRectMake\cf1 (\cf7 0\cf1 , \cf7 0\cf1 , \cf7 250\cf1 , \cf7 100\cf1 )];\
+        label.\cf6 text\cf1  = \cf4 @"s"\cf1 ;\
+        label.\cf6 font\cf1  = [\cf6 UIFont\cf1  \cf6 systemFontOfSize\cf1 :\cf7 60\cf1 ];\
+        label.\cf6 textColor\cf1  = [\cf6 UIColor\cf1  \cf6 yellowColor\cf1 ];\
+        label.\cf6 textAlignment\cf1  = \cf6 NSTextAlignmentCenter\cf1 ;\
+        [\cf5 self\cf1  \cf6 addSubview\cf1 :label];\
+        \cf8 _label\cf1  = label;\
+    \}\
+    \cf5 return\cf1  \cf8 _label\cf1 ;\
+\}\
+\
+- (\cf5 id\cf1 )initWithFrame:(\cf6 CGRect\cf1 )frame\
+\{\
+    \cf5 self\cf1  = [\cf5 super\cf1  \cf6 initWithFrame\cf1 :frame];\
+    \cf5 if\cf1  (\cf5 self\cf1 ) \{\
+        \cf2 // Initialization code\cf1 \
+    \}\
+    \cf5 return\cf1  \cf5 self\cf1 ;\
+\}\
+\
+- (\cf5 void\cf1 )awakeFromNib\
+\{\
+\cf2 //    self.label;\cf1 \
+\}\
+\
+\
+\cf2 // Only override drawRect: if you perform custom drawing.\cf1 \
+\cf2 // An empty implementation adversely affects performance during animation.\cf1 \
+- (\cf5 void\cf1 )drawRect:(\cf6 CGRect\cf1 )rect\
+\{\
+    \cf2 // Drawing code\cf1 \
+   \
+    \cf2 // 1.
+\f1 \'bb\'f1\'c8\'a1\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextRef\cf1  ctx = \cf6 UIGraphicsGetCurrentContext\cf1 ();\
+    \
+    \cf2 // 2.
+\f1 \'c6\'b4\'bd\'d3\'c2\'b7\'be\'b6
+\f0 \cf1 \
+    \cf6 CGPoint\cf1  center = \cf6 CGPointMake\cf1 (\cf7 125\cf1 , \cf7 125\cf1 );\
+    \cf6 CGFloat\cf1  radius = \cf7 100\cf1 ;\
+    \cf6 CGFloat\cf1  startA = \cf7 0\cf1 ;\
+    \cf6 CGFloat\cf1  endA = \cf3 M_PI_2\cf1 ;\
+    \cf6 UIBezierPath\cf1  *path = [\cf6 UIBezierPath\cf1  \cf6 bezierPathWithArcCenter\cf1 :center \cf6 radius\cf1 :radius \cf6 startAngle\cf1 :startA \cf6 endAngle\cf1 :endA \cf6 clockwise\cf1 :\cf5 YES\cf1 ];\
+    \
+    [path \cf6 addLineToPoint\cf1 :center];\
+    \
+    \cf2 // 3.
+\f1 \'b0\'d1\'c2\'b7\'be\'b6\'cc\'ed\'bc\'d3\'b5\'bd\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextAddPath\cf1 (ctx, path.\cf6 CGPath\cf1 );\
+    \
+    \cf2 // 4.
+\f1 \'e4\'d6\'c8\'be\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+\cf2 //    CGContextStrokePath(ctx);\cf1 \
+    \cf6 CGContextFillPath\cf1 (ctx);\
+\
+\
+\}\
+\
+- (\cf5 void\cf1 )drawArc\
+\{\
+    \cf2 // 1.
+\f1 \'bb\'f1\'c8\'a1\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextRef\cf1  ctx = \cf6 UIGraphicsGetCurrentContext\cf1 ();\
+    \
+    \cf2 // 2.
+\f1 \'c6\'b4\'bd\'d3\'c2\'b7\'be\'b6
+\f0 \cf1 \
+    \cf6 CGPoint\cf1  center = \cf6 CGPointMake\cf1 (\cf7 125\cf1 , \cf7 125\cf1 );\
+    \cf6 CGFloat\cf1  radius = \cf7 100\cf1 ;\
+    \cf6 CGFloat\cf1  startA = \cf7 0\cf1 ;\
+    \cf6 CGFloat\cf1  endA = \cf3 M_PI_2\cf1 ;\
+    \cf6 UIBezierPath\cf1  *path = [\cf6 UIBezierPath\cf1  \cf6 bezierPathWithArcCenter\cf1 :center \cf6 radius\cf1 :radius \cf6 startAngle\cf1 :startA \cf6 endAngle\cf1 :endA \cf6 clockwise\cf1 :\cf5 YES\cf1 ];\
+    \
+    \cf2 // 3.
+\f1 \'b0\'d1\'c2\'b7\'be\'b6\'cc\'ed\'bc\'d3\'b5\'bd\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextAddPath\cf1 (ctx, path.\cf6 CGPath\cf1 );\
+    \
+    \cf2 // 4.
+\f1 \'e4\'d6\'c8\'be\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextStrokePath\cf1 (ctx);\
+\}\
+\
+- (\cf5 void\cf1 )drawCircle\
+\{\
+    \cf2 // 1.
+\f1 \'bb\'f1\'c8\'a1\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextRef\cf1  ctx = \cf6 UIGraphicsGetCurrentContext\cf1 ();\
+    \
+    \cf2 // 2.
+\f1 \'c6\'b4\'bd\'d3\'c2\'b7\'be\'b6
+\f0 \cf1 \
+    \cf6 UIBezierPath\cf1  *path = [\cf6 UIBezierPath\cf1  \cf6 bezierPathWithOvalInRect\cf1 :\cf6 CGRectMake\cf1 (\cf7 10\cf1 , \cf7 10\cf1 , \cf7 200\cf1 , \cf7 100\cf1 )];\
+    \
+    \cf2 // 3.
+\f1 \'b0\'d1\'c2\'b7\'be\'b6\'cc\'ed\'bc\'d3\'b5\'bd\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextAddPath\cf1 (ctx, path.\cf6 CGPath\cf1 );\
+    \
+    \cf2 // 4.
+\f1 \'e4\'d6\'c8\'be\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextStrokePath\cf1 (ctx);\
+\
+\}\
+\
+- (\cf5 void\cf1 )drawRectangle\
+\{\
+    \cf2 // 1.
+\f1 \'bb\'f1\'c8\'a1\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextRef\cf1  ctx = \cf6 UIGraphicsGetCurrentContext\cf1 ();\
+    \
+    \cf2 // 2.
+\f1 \'c6\'b4\'bd\'d3\'c2\'b7\'be\'b6
+\f0 \cf1 \
+    \cf6 UIBezierPath\cf1  *path = [\cf6 UIBezierPath\cf1  \cf6 bezierPathWithRect\cf1 :\cf6 CGRectMake\cf1 (\cf7 10\cf1 , \cf7 10\cf1 , \cf7 200\cf1 , \cf7 200\cf1 )];\
+    path = [\cf6 UIBezierPath\cf1  \cf6 bezierPathWithRoundedRect\cf1 :\cf6 CGRectMake\cf1 (\cf7 10\cf1 , \cf7 10\cf1 , \cf7 200\cf1 , \cf7 200\cf1 ) \cf6 cornerRadius\cf1 :\cf7 20\cf1 ];\
+    \
+    \cf2 // 3.
+\f1 \'b0\'d1\'c2\'b7\'be\'b6\'cc\'ed\'bc\'d3\'b5\'bd\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextAddPath\cf1 (ctx, path.\cf6 CGPath\cf1 );\
+    \
+    \cf2 // 4.
+\f1 \'e4\'d6\'c8\'be\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextStrokePath\cf1 (ctx);\
+\}\
+\
+- (\cf5 void\cf1 )drawSupernene\
+\{\
+    \cf2 // 1.
+\f1 \'bb\'f1\'c8\'a1\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextRef\cf1  ctx = \cf6 UIGraphicsGetCurrentContext\cf1 ();\
+    \
+    \cf2 // 2.
+\f1 \'c6\'b4\'bd\'d3\'c2\'b7\'be\'b6
+\f0 \cf1 \
+    \cf6 UIBezierPath\cf1  *path = [\cf6 UIBezierPath\cf1  \cf6 bezierPath\cf1 ];\
+    \
+    \cf6 CGPoint\cf1  startP = \cf6 CGPointMake\cf1 (\cf7 10\cf1 , \cf7 10\cf1 );\
+    \
+    [path \cf6 moveToPoint\cf1 :startP];\
+    \
+    [path \cf6 addLineToPoint\cf1 :\cf6 CGPointMake\cf1 (\cf7 125\cf1 , \cf7 125\cf1 )];\
+    \
+    [path \cf6 addLineToPoint\cf1 :\cf6 CGPointMake\cf1 (\cf7 240\cf1 , \cf7 10\cf1 )];\
+    \
+    \cf2 // 
+\f1 \'b4\'d3\'c2\'b7\'be\'b6\'b5\'c4\'d6\'d5\'b5\'e3\'c1\'ac\'bd\'d3\'b5\'bd\'c6\'f0\'b5\'e3
+\f0 \cf1 \
+    [path \cf6 closePath\cf1 ];\
+    \cf2 //    [path addLineToPoint:startP];\cf1 \
+    \
+    \cf2 // 3.
+\f1 \'b0\'d1\'c2\'b7\'be\'b6\'cc\'ed\'bc\'d3\'b5\'bd\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextAddPath\cf1 (ctx, path.\cf6 CGPath\cf1 );\
+    \
+    [[\cf6 UIColor\cf1  \cf6 blueColor\cf1 ] \cf6 setFill\cf1 ];\
+    [[\cf6 UIColor\cf1  \cf6 redColor\cf1 ] \cf6 setStroke\cf1 ];\
+    \
+    \cf6 CGContextSetLineWidth\cf1 (ctx, \cf7 15\cf1 );\
+    \
+    \cf2 // 4.
+\f1 \'e4\'d6\'c8\'be\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf2 //    CGContextStrokePath(ctx);\cf1 \
+    \cf2 //    CGContextFillPath(ctx);\cf1 \
+    \cf2 // 
+\f1 \'bc\'b4\'cc\'ee\'b3\'e4\'d3\'d6\'c3\'e8\'b1\'df
+\f0  kCGPathFillStroke\cf1 \
+    \cf6 CGContextDrawPath\cf1 (ctx, \cf6 kCGPathFillStroke\cf1 );\
+\}\
+\
+\
+\
+\
+\cf5 @end\cf1 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\cf2 //\cf1 \
+\cf2 //  HMProgressView.m\cf1 \
+\cf2 //  02-
+\f1 \'cf\'c2\'d4\'d8\'bd\'f8\'b6\'c8\'cc\'f5
+\f0 \cf1 \
+\cf2 //\cf1 \
+\cf2 //  Created by apple on 14-9-2.\cf1 \
+\cf2 //  Copyright (c) 2014
+\f1 \'c4\'ea
+\f0  itcast. All rights reserved.\cf1 \
+\cf2 //\cf1 \
+\
+\cf3 #import \cf4 "HMProgressView.h"\cf3 \
+\cf1 \
+\cf5 @interface\cf1  \cf8 HMProgressView\cf1 ()\
+\
+\cf5 @property\cf1  (\cf5 nonatomic\cf1 , \cf5 weak\cf1 ) \cf6 UILabel\cf1  *label;\
+\
+\cf5 @end\cf1 \
+\
+\
+\
+\cf5 @implementation\cf1  HMProgressView\
+\
+- (\cf6 UILabel\cf1  *)label\
+\{\
+    \cf5 if\cf1  (\cf8 _label\cf1  == \cf5 nil\cf1 ) \{\
+        \cf6 UILabel\cf1  *label = [[\cf6 UILabel\cf1  \cf6 alloc\cf1 ] \cf6 initWithFrame\cf1 :\cf6 CGRectMake\cf1 (\cf7 0\cf1 , \cf7 0\cf1 , \cf7 100\cf1 , \cf7 100\cf1 )];\
+        label.\cf6 textAlignment\cf1  = \cf6 NSTextAlignmentCenter\cf1 ;\
+        \
+        [\cf5 self\cf1  \cf6 addSubview\cf1 :label];\
+        \cf8 _label\cf1  = label;\
+    \}\
+    \cf5 return\cf1  \cf8 _label\cf1 ;\
+\}\
+\
+- (\cf5 void\cf1 )setProgress:(\cf6 CGFloat\cf1 )progress\
+\{\
+    \cf8 _progress\cf1  = progress;\
+    \cf5 self\cf1 .\cf8 label\cf1 .\cf6 text\cf1  = [\cf6 NSString\cf1  \cf6 stringWithFormat\cf1 :\cf4 @"%.2f%%"\cf1 ,progress * \cf7 100\cf1 ];\
+    \
+\cf2 //    [self drawRect:self.bounds];\cf1 \
+    \cf2 // 
+\f1 \'d6\'d8\'d0\'c2\'bb\'e6\'d6\'c6
+\f0 \cf1 \
+    \cf2 // 
+\f1 \'d4\'da
+\f0 view
+\f1 \'c9\'cf\'d7\'f6\'d2\'bb\'b8\'f6\'d6\'d8\'bb\'e6\'b5\'c4\'b1\'ea\'bc\'c7\'a3\'ac\'b5\'b1\'cf\'c2\'b4\'ce\'c6\'c1\'c4\'bb\'cb\'a2\'d0\'c2\'b5\'c4\'ca\'b1\'ba\'f2\'a3\'ac\'be\'cd\'bb\'e1\'b5\'f7\'d3\'c3
+\f0 drawRect.\cf1 \
+    [\cf5 self\cf1  \cf6 setNeedsDisplay\cf1 ];\
+\}\
+\
+\
+\cf2 // Only override drawRect: if you perform custom drawing.\cf1 \
+\cf2 // An empty implementation adversely affects performance during animation.\cf1 \
+\cf2 // 
+\f1 \'b5\'b1\'ca\'d3\'cd\'bc\'cf\'d4\'ca\'be\'b5\'c4\'ca\'b1\'ba\'f2\'bb\'e1\'b5\'f7\'d3\'c3
+\f0  
+\f1 \'c4\'ac\'c8\'cf\'d6\'bb\'bb\'e1\'b5\'f7\'d3\'c3\'d2\'bb\'b4\'ce
+\f0 \cf1 \
+- (\cf5 void\cf1 )drawRect:(\cf6 CGRect\cf1 )rect\
+\{\
+    \cf2 // Drawing code\cf1 \
+    \
+    \cf2 // 1.
+\f1 \'bb\'f1\'c8\'a1\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextRef\cf1  ctx = \cf6 UIGraphicsGetCurrentContext\cf1 ();\
+    \
+    \cf2 // 2.
+\f1 \'c6\'b4\'bd\'d3\'c2\'b7\'be\'b6
+\f0 \cf1 \
+    \cf6 CGPoint\cf1  center = \cf6 CGPointMake\cf1 (\cf7 50\cf1 , \cf7 50\cf1 );\
+    \cf6 CGFloat\cf1  radius = \cf7 50\cf1  - \cf7 2\cf1 ;\
+    \cf6 CGFloat\cf1  startA = -\cf3 M_PI_2\cf1 ;\
+    \cf6 CGFloat\cf1  endA = -\cf3 M_PI_2\cf1  + \cf8 _progress\cf1  * \cf3 M_PI\cf1  * \cf7 2\cf1 ;\
+    \cf6 UIBezierPath\cf1  *path = [\cf6 UIBezierPath\cf1  \cf6 bezierPathWithArcCenter\cf1 :center \cf6 radius\cf1 :radius \cf6 startAngle\cf1 :startA \cf6 endAngle\cf1 :endA \cf6 clockwise\cf1 :\cf5 YES\cf1 ];\
+    \
+    \cf2 // 3.
+\f1 \'b0\'d1\'c2\'b7\'be\'b6\'cc\'ed\'bc\'d3\'b5\'bd\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextAddPath\cf1 (ctx, path.\cf6 CGPath\cf1 );\
+    \
+    \cf2 // 4.
+\f1 \'b0\'d1\'c9\'cf\'cf\'c2\'ce\'c4\'e4\'d6\'c8\'be\'b5\'bd\'ca\'d3\'cd\'bc
+\f0 \cf1 \
+    \cf6 CGContextStrokePath\cf1 (ctx);\
+    \
+\}\
+\
+\
+\cf5 @end\cf1 \
+\
+\
+\
+\
+\
+\
+\
+\cf2 //\cf1 \
+\cf2 //  HMPieView.m\cf1 \
+\cf2 //  03-
+\f1 \'b1\'fd\'cd\'bc
+\f0 \cf1 \
+\cf2 //\cf1 \
+\cf2 //  Created by apple on 14-9-2.\cf1 \
+\cf2 //  Copyright (c) 2014
+\f1 \'c4\'ea
+\f0  itcast. All rights reserved.\cf1 \
+\cf2 //\cf1 \
+\
+\cf3 #import \cf4 "HMPieView.h"\cf3 \
+#import \cf4 "UIColor+Random.h"\cf3 \
+\cf5 @implementation\cf1  HMPieView\
+\
+- (\cf5 id\cf1 )initWithFrame:(\cf6 CGRect\cf1 )frame\
+\{\
+    \cf5 self\cf1  = [\cf5 super\cf1  \cf6 initWithFrame\cf1 :frame];\
+    \cf5 if\cf1  (\cf5 self\cf1 ) \{\
+        \cf2 // Initialization code\cf1 \
+    \}\
+    \cf5 return\cf1  \cf5 self\cf1 ;\
+\}\
+\
+\
+\cf2 // Only override drawRect: if you perform custom drawing.\cf1 \
+\cf2 // An empty implementation adversely affects performance during animation.\cf1 \
+- (\cf5 void\cf1 )drawRect:(\cf6 CGRect\cf1 )rect\
+\{\
+    \cf2 // Drawing code\cf1 \
+    \
+    \cf6 NSArray\cf1  *data = \cf7 @[@25\cf1 ,\cf7 @25\cf1 ,\cf7 @50]\cf1 ;\
+    \
+    \cf2 // 1.
+\f1 \'bb\'f1\'c8\'a1\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextRef\cf1  ctx = \cf6 UIGraphicsGetCurrentContext\cf1 ();\
+    \
+    \cf2 // 2.
+\f1 \'c6\'b4\'bd\'d3\'c2\'b7\'be\'b6
+\f0 \cf1 \
+    \cf6 CGPoint\cf1  center = \cf6 CGPointMake\cf1 (\cf7 125\cf1 , \cf7 125\cf1 );\
+    \cf6 CGFloat\cf1  radius = \cf7 120\cf1 ;\
+    \cf6 CGFloat\cf1  startA = \cf7 0\cf1 ;\
+    \cf6 CGFloat\cf1  angle = \cf7 0\cf1 ;\
+    \cf6 CGFloat\cf1  endA = \cf7 0\cf1 ;\
+    \
+    \cf5 for\cf1  (\cf6 NSNumber\cf1  *number \cf5 in\cf1  data) \{\
+        \cf2 // 2.
+\f1 \'c6\'b4\'bd\'d3\'c2\'b7\'be\'b6
+\f0 \cf1 \
+        startA = endA;\
+        angle = number.\cf6 intValue\cf1  / \cf7 100.0\cf1  * \cf3 M_PI\cf1  * \cf7 2\cf1 ;\
+        endA = startA + angle;\
+        \cf6 UIBezierPath\cf1  *path = [\cf6 UIBezierPath\cf1  \cf6 bezierPathWithArcCenter\cf1 :center \cf6 radius\cf1 :radius \cf6 startAngle\cf1 :startA \cf6 endAngle\cf1 :endA \cf6 clockwise\cf1 :\cf5 YES\cf1 ];\
+        [path \cf6 addLineToPoint\cf1 :center];\
+        \
+        [[\cf6 UIColor\cf1  \cf8 randomColor\cf1 ] \cf6 set\cf1 ];\
+        \cf2 // 
+\f1 \'b0\'d1\'c2\'b7\'be\'b6\'cc\'ed\'bc\'d3\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+        \cf6 CGContextAddPath\cf1 (ctx, path.\cf6 CGPath\cf1 );\
+        \
+        \cf2 // 
+\f1 \'e4\'d6\'c8\'be
+\f0 \cf1 \
+        \cf6 CGContextFillPath\cf1 (ctx);\
+        \
+    \}\
+\
+    \
+\}\
+\
+- (\cf5 void\cf1 )touchesBegan:(\cf6 NSSet\cf1  *)touches withEvent:(\cf6 UIEvent\cf1  *)event\
+\{\
+    \cf6 CGFloat\cf1  a = \cf6 arc4random_uniform\cf1 (\cf7 6\cf1 );\
+    \cf2 //CGFloat a =  arc4random()%6;\cf1 \
+    \cf6 NSLog\cf1 (\cf4 @"
+\f1 \cf4 \'cb\'e6\'bb\'fa\'ca\'fd
+\f0 \cf4 --%f"\cf1 ,a);\
+    \
+\
+    [\cf5 self\cf1  \cf6 setNeedsDisplay\cf1 ];\
+\}\
+\
+- (\cf5 void\cf1 )drawPie\
+\{\
+    \cf2 // 1.
+\f1 \'bb\'f1\'c8\'a1\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextRef\cf1  ctx = \cf6 UIGraphicsGetCurrentContext\cf1 ();\
+    \
+    \cf2 // 2.
+\f1 \'c6\'b4\'bd\'d3\'c2\'b7\'be\'b6
+\f0 \cf1 \
+    \cf6 CGPoint\cf1  center = \cf6 CGPointMake\cf1 (\cf7 125\cf1 , \cf7 125\cf1 );\
+    \cf6 CGFloat\cf1  radius = \cf7 120\cf1 ;\
+    \cf6 CGFloat\cf1  startA = \cf7 0\cf1 ;\
+    \cf6 CGFloat\cf1  angle = \cf7 0\cf1 ;\
+    \cf6 CGFloat\cf1  endA = \cf7 0\cf1 ;\
+    \
+    \cf2 // 
+\f1 \'b5\'da\'d2\'bb\'b8\'f6\'c9\'c8\'d0\'ce
+\f0 \cf1 \
+    angle = \cf7 25\cf1  / \cf7 100.0\cf1  * \cf3 M_PI\cf1  * \cf7 2\cf1 ;\
+    endA = startA + angle;\
+    \cf6 UIBezierPath\cf1  *path = [\cf6 UIBezierPath\cf1  \cf6 bezierPathWithArcCenter\cf1 :center \cf6 radius\cf1 :radius \cf6 startAngle\cf1 :startA \cf6 endAngle\cf1 :endA \cf6 clockwise\cf1 :\cf5 YES\cf1 ];\
+    [path \cf6 addLineToPoint\cf1 :center];\
+    \cf2 // 
+\f1 \'cc\'ed\'bc\'d3\'b5\'bd\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextAddPath\cf1 (ctx, path.\cf6 CGPath\cf1 );\
+    [[\cf6 UIColor\cf1  \cf6 redColor\cf1 ] \cf6 set\cf1 ];\
+    \
+    \
+    \cf2 // 
+\f1 \'e4\'d6\'c8\'be
+\f0 \cf1 \
+    \cf6 CGContextFillPath\cf1 (ctx);\
+    \
+    \
+    \
+    \cf2 // 
+\f1 \'b5\'da\'b6\'fe\'b8\'f6\'c9\'c8\'d0\'ce
+\f0 \cf1 \
+    startA = endA;\
+    angle = \cf7 25\cf1  / \cf7 100.0\cf1  * \cf3 M_PI\cf1  * \cf7 2\cf1 ;\
+    endA = startA + angle;\
+    \cf6 UIBezierPath\cf1  *path1 = [\cf6 UIBezierPath\cf1  \cf6 bezierPathWithArcCenter\cf1 :center \cf6 radius\cf1 :radius \cf6 startAngle\cf1 :startA \cf6 endAngle\cf1 :endA \cf6 clockwise\cf1 :\cf5 YES\cf1 ];\
+    [path1 \cf6 addLineToPoint\cf1 :center];\
+    \cf2 // 
+\f1 \'cc\'ed\'bc\'d3\'b5\'bd\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextAddPath\cf1 (ctx, path1.\cf6 CGPath\cf1 );\
+    [[\cf6 UIColor\cf1  \cf6 greenColor\cf1 ] \cf6 set\cf1 ];\
+    \cf2 // 
+\f1 \'e4\'d6\'c8\'be
+\f0 \cf1 \
+    \cf6 CGContextFillPath\cf1 (ctx);\
+    \
+    \cf2 // 
+\f1 \'b5\'da\'c8\'fd\'b8\'f6\'c9\'c8\'d0\'ce
+\f0 \cf1 \
+    startA = endA;\
+    angle = \cf7 50\cf1  / \cf7 100.0\cf1  * \cf3 M_PI\cf1  * \cf7 2\cf1 ;\
+    endA = startA + angle;\
+    \cf6 UIBezierPath\cf1  *path2 = [\cf6 UIBezierPath\cf1  \cf6 bezierPathWithArcCenter\cf1 :center \cf6 radius\cf1 :radius \cf6 startAngle\cf1 :startA \cf6 endAngle\cf1 :endA \cf6 clockwise\cf1 :\cf5 YES\cf1 ];\
+    [path2 \cf6 addLineToPoint\cf1 :center];\
+    \cf2 // 
+\f1 \'cc\'ed\'bc\'d3\'b5\'bd\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextAddPath\cf1 (ctx, path2.\cf6 CGPath\cf1 );\
+    [[\cf6 UIColor\cf1  \cf6 blueColor\cf1 ] \cf6 set\cf1 ];\
+    \cf2 // 
+\f1 \'e4\'d6\'c8\'be
+\f0 \cf1 \
+    \cf6 CGContextFillPath\cf1 (ctx);\
+    \
+   \}\
+\
+\
+\cf5 @end\cf1 \
+\
+\
+\
+\
+\
+\
+\
+\cf2 //\cf1 \
+\cf2 //  HMBarView.m\cf1 \
+\cf2 //  04-
+\f1 \'d6\'f9\'d7\'b4\'cd\'bc
+\f0 \cf1 \
+\cf2 //\cf1 \
+\cf2 //  Created by apple on 14-9-2.\cf1 \
+\cf2 //  Copyright (c) 2014
+\f1 \'c4\'ea
+\f0  itcast. All rights reserved.\cf1 \
+\cf2 //\cf1 \
+\
+\cf3 #import \cf4 "HMBarView.h"\cf3 \
+#import \cf4 "UIColor+Random.h"\cf3 \
+\cf5 @implementation\cf1  HMBarView\
+\
+- (\cf5 id\cf1 )initWithFrame:(\cf6 CGRect\cf1 )frame\
+\{\
+    \cf5 self\cf1  = [\cf5 super\cf1  \cf6 initWithFrame\cf1 :frame];\
+    \cf5 if\cf1  (\cf5 self\cf1 ) \{\
+        \cf2 // Initialization code\cf1 \
+    \}\
+    \cf5 return\cf1  \cf5 self\cf1 ;\
+\}\
+\
+\
+\cf2 // Only override drawRect: if you perform custom drawing.\cf1 \
+\cf2 // An empty implementation adversely affects performance during animation.\cf1 \
+- (\cf5 void\cf1 )drawRect:(\cf6 CGRect\cf1 )rect\
+\{\
+    \cf2 // Drawing code\cf1 \
+    \cf6 NSArray\cf1  *data = \cf7 @[@25\cf1 ,\cf7 @25\cf1 ,\cf7 @50]\cf1 ;\
+    \cf5 int\cf1  count = data.\cf6 count\cf1 ;\
+    \
+    \cf6 CGFloat\cf1  w = rect.\cf6 size\cf1 .\cf6 width\cf1  / (\cf7 2\cf1  * count - \cf7 1\cf1 );\
+    \cf6 CGFloat\cf1  h = \cf7 0\cf1 ;\
+    \cf6 CGFloat\cf1  x = \cf7 0\cf1 ;\
+    \cf6 CGFloat\cf1  y = \cf7 0\cf1 ;\
+    \cf6 CGFloat\cf1  viewH = rect.\cf6 size\cf1 .\cf6 height\cf1 ;\
+    \cf2 // 1.
+\f1 \'bb\'f1\'c8\'a1\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+    \cf6 CGContextRef\cf1  ctx = \cf6 UIGraphicsGetCurrentContext\cf1 ();\
+    \
+    \cf5 for\cf1  (\cf5 int\cf1  i = \cf7 0\cf1 ; i < count; i++) \{\
+        h = viewH * [data[i] \cf6 intValue\cf1 ] / \cf7 100.0\cf1 ;\
+        x = \cf7 2\cf1  * w * i;\
+        y = viewH - h;\
+        \cf2 // 2.
+\f1 \'c6\'b4\'bd\'d3\'c2\'b7\'be\'b6
+\f0 \cf1 \
+        \cf6 UIBezierPath\cf1  *path = [\cf6 UIBezierPath\cf1  \cf6 bezierPathWithRect\cf1 :\cf6 CGRectMake\cf1 (x, y, w, h)];\
+        \
+        \cf2 // 3.
+\f1 \'cc\'ed\'bc\'d3\'c2\'b7\'be\'b6\'b5\'bd\'c9\'cf\'cf\'c2\'ce\'c4
+\f0 \cf1 \
+        \cf6 CGContextAddPath\cf1 (ctx, path.\cf6 CGPath\cf1 );\
+        \
+        [[\cf6 UIColor\cf1  \cf8 randomColor\cf1 ] \cf6 set\cf1 ];\
+        \
+        \cf2 // 4.
+\f1 \'e4\'d6\'c8\'be
+\f0 \cf1 \
+        \cf6 CGContextFillPath\cf1 (ctx);\
+    \}\
+    \
+\}\
+\
+- (\cf5 void\cf1 )touchesBegan:(\cf6 NSSet\cf1  *)touches withEvent:(\cf6 UIEvent\cf1  *)event\
+\{\
+    [\cf5 self\cf1  \cf6 setNeedsDisplay\cf1 ];\
+\}\
+\
+\
+\cf5 @end\cf1 \
+\
+}

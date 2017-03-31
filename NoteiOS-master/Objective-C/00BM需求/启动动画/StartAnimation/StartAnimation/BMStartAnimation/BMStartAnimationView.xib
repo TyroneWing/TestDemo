@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BMStartAnimationView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_start_blue_side.png" translatesAutoresizingMaskIntoConstraints="NO" id="aHQ-V7-F36">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_start_image_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="bO7-Mp-dyx">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_start_moon_BoxFull.png" translatesAutoresizingMaskIntoConstraints="NO" id="IFZ-ob-u4a">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_start_bluemoon_blue_loge.png" translatesAutoresizingMaskIntoConstraints="NO" id="CbO-yL-n7R">
+                    <rect key="frame" x="124" y="566" width="128" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="128" id="7UF-e0-ikD"/>
+                        <constraint firstAttribute="height" constant="47" id="fbJ-4f-jVT"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_start_bluemoon_white_loge.png" translatesAutoresizingMaskIntoConstraints="NO" id="uxb-2a-0c3">
+                    <rect key="frame" x="124" y="566" width="128" height="47"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bO7-Mp-dyx" secondAttribute="bottom" id="1NO-QY-6Lg"/>
+                <constraint firstAttribute="bottom" secondItem="IFZ-ob-u4a" secondAttribute="bottom" id="5ls-aB-mu9"/>
+                <constraint firstAttribute="trailing" secondItem="aHQ-V7-F36" secondAttribute="trailing" id="8IK-nl-BaA"/>
+                <constraint firstItem="CbO-yL-n7R" firstAttribute="top" secondItem="uxb-2a-0c3" secondAttribute="top" id="8NN-OP-2GT"/>
+                <constraint firstAttribute="bottom" secondItem="aHQ-V7-F36" secondAttribute="bottom" id="BZc-ml-LV9"/>
+                <constraint firstItem="aHQ-V7-F36" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="Izf-vM-3o0"/>
+                <constraint firstAttribute="bottom" secondItem="CbO-yL-n7R" secondAttribute="bottom" constant="54" id="UKu-qe-ljz"/>
+                <constraint firstItem="CbO-yL-n7R" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Whw-dt-GQA"/>
+                <constraint firstAttribute="trailing" secondItem="bO7-Mp-dyx" secondAttribute="trailing" id="YnM-3O-xGd"/>
+                <constraint firstItem="bO7-Mp-dyx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="ZAH-mq-buk"/>
+                <constraint firstItem="IFZ-ob-u4a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="cpJ-yM-UAL"/>
+                <constraint firstItem="CbO-yL-n7R" firstAttribute="bottom" secondItem="uxb-2a-0c3" secondAttribute="bottom" id="mX8-HX-XUg"/>
+                <constraint firstItem="aHQ-V7-F36" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rFj-lI-Ueb"/>
+                <constraint firstItem="bO7-Mp-dyx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ryh-oZ-WlR"/>
+                <constraint firstItem="CbO-yL-n7R" firstAttribute="leading" secondItem="uxb-2a-0c3" secondAttribute="leading" id="uQd-km-a34"/>
+                <constraint firstItem="CbO-yL-n7R" firstAttribute="trailing" secondItem="uxb-2a-0c3" secondAttribute="trailing" id="ujy-ya-sWo"/>
+                <constraint firstItem="IFZ-ob-u4a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="we0-1f-GzI"/>
+                <constraint firstAttribute="trailing" secondItem="IFZ-ob-u4a" secondAttribute="trailing" id="zrx-Zf-9LX"/>
+            </constraints>
+            <connections>
+                <outlet property="blueImageView" destination="aHQ-V7-F36" id="Oa5-km-Kcb"/>
+                <outlet property="blueLogeImageView" destination="CbO-yL-n7R" id="Qj3-vC-El4"/>
+                <outlet property="lineImageView" destination="bO7-Mp-dyx" id="xWI-Q2-O5c"/>
+                <outlet property="moonImageView" destination="IFZ-ob-u4a" id="ZAK-Yw-Rw4"/>
+                <outlet property="whiteLogeImageView" destination="uxb-2a-0c3" id="viv-ag-bnh"/>
+            </connections>
+            <point key="canvasLocation" x="-311.5" y="-3.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_start_blue_side.png" width="320" height="504"/>
+        <image name="icon_start_bluemoon_blue_loge.png" width="128" height="47"/>
+        <image name="icon_start_bluemoon_white_loge.png" width="155" height="57"/>
+        <image name="icon_start_image_line.png" width="320" height="505"/>
+        <image name="icon_start_moon_BoxFull.png" width="320" height="504"/>
+    </resources>
+</document>

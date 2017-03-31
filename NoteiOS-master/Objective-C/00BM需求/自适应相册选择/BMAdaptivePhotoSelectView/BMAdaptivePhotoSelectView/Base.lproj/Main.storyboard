@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2n9-b4-3ch">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hmE-7f-5FW">
+                        <barButtonItem key="rightBarButtonItem" title="push" id="QqB-uP-XNZ">
+                            <connections>
+                                <segue destination="y2n-ZU-QiO" kind="push" id="uHc-7B-oBd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55" y="508"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yfR-vO-Fqq">
+            <objects>
+                <viewController id="y2n-ZU-QiO" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hl6-et-jcf"/>
+                        <viewControllerLayoutGuide type="bottom" id="o5n-3z-ox9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="edL-ui-g3C">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EX5-Xq-qey" customClass="BMMyAdaptivePhotoSelectView">
+                                <rect key="frame" x="10" y="89" width="580" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="999" constant="128" id="aW3-wT-bzg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="autolayoutCount">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="autolayoutSpacing">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumCount">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="boothString" value="icon_washClothes_noOrder_Plus_act"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EX5-Xq-qey" secondAttribute="trailing" constant="10" id="6Qz-4m-vMP"/>
+                            <constraint firstItem="EX5-Xq-qey" firstAttribute="top" secondItem="hl6-et-jcf" secondAttribute="bottom" constant="10" id="cPr-x1-cFX"/>
+                            <constraint firstItem="EX5-Xq-qey" firstAttribute="leading" secondItem="edL-ui-g3C" secondAttribute="leading" constant="10" id="jeG-QX-1uz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HI5-6b-oG3">
+                        <barButtonItem key="rightBarButtonItem" title="getimage" id="rLx-w8-65R">
+                            <connections>
+                                <action selector="aa:" destination="y2n-ZU-QiO" id="XBx-8Q-1fb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myyyy" destination="EX5-Xq-qey" id="Qbh-lO-26O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PTc-kM-264" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-349" y="518"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wqd-OD-qdI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2n9-b4-3ch" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wvj-1t-JAA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KP6-gc-ZpL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8VR-cZ-iBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="532"/>
+        </scene>
+    </scenes>
+</document>

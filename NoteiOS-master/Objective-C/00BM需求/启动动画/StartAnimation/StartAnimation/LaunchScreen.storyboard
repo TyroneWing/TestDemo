@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_start_blue_side.png" translatesAutoresizingMaskIntoConstraints="NO" id="P30-Hd-2yp">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_start_image_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="PZS-aY-DoF">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_start_moon_BoxFull.png" translatesAutoresizingMaskIntoConstraints="NO" id="hbh-VW-B2x">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_start_bluemoon_white_loge.png" translatesAutoresizingMaskIntoConstraints="NO" id="j19-8K-coO">
+                                <rect key="frame" x="123.5" y="566" width="128" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="2uP-Sx-otz"/>
+                                    <constraint firstAttribute="height" constant="47" id="5Vo-yu-MLG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="j19-8K-coO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6cI-JR-FDw"/>
+                            <constraint firstItem="PZS-aY-DoF" firstAttribute="top" secondItem="P30-Hd-2yp" secondAttribute="top" id="9DK-Al-qm4"/>
+                            <constraint firstAttribute="bottom" secondItem="j19-8K-coO" secondAttribute="bottom" constant="54" id="9Vz-BX-fms"/>
+                            <constraint firstItem="P30-Hd-2yp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="D7x-vf-hmm"/>
+                            <constraint firstItem="hbh-VW-B2x" firstAttribute="leading" secondItem="P30-Hd-2yp" secondAttribute="leading" id="E8x-xy-xcv"/>
+                            <constraint firstItem="hbh-VW-B2x" firstAttribute="bottom" secondItem="P30-Hd-2yp" secondAttribute="bottom" id="LDZ-vc-JDt"/>
+                            <constraint firstItem="PZS-aY-DoF" firstAttribute="leading" secondItem="P30-Hd-2yp" secondAttribute="leading" id="O5y-qe-6ec"/>
+                            <constraint firstItem="P30-Hd-2yp" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="64" id="TcE-aa-xPK"/>
+                            <constraint firstItem="hbh-VW-B2x" firstAttribute="top" secondItem="P30-Hd-2yp" secondAttribute="top" id="dee-Yq-Eow"/>
+                            <constraint firstItem="PZS-aY-DoF" firstAttribute="trailing" secondItem="P30-Hd-2yp" secondAttribute="trailing" id="gKh-I5-DwB"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="P30-Hd-2yp" secondAttribute="bottom" id="gtE-1d-MAi"/>
+                            <constraint firstItem="hbh-VW-B2x" firstAttribute="trailing" secondItem="P30-Hd-2yp" secondAttribute="trailing" id="hQJ-VC-NUu"/>
+                            <constraint firstItem="PZS-aY-DoF" firstAttribute="bottom" secondItem="P30-Hd-2yp" secondAttribute="bottom" id="qf2-e8-wOR"/>
+                            <constraint firstAttribute="trailing" secondItem="P30-Hd-2yp" secondAttribute="trailing" id="tlI-WZ-689"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1156" y="20"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_start_blue_side.png" width="320" height="504"/>
+        <image name="icon_start_bluemoon_white_loge.png" width="155" height="57"/>
+        <image name="icon_start_image_line.png" width="320" height="505"/>
+        <image name="icon_start_moon_BoxFull.png" width="320" height="504"/>
+    </resources>
+</document>

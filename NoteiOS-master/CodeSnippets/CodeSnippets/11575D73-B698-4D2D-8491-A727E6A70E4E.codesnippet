@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>api</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - BMAPIManagerCallBackDelegate
+
+- (void)managerCallApiDidSuccess:(BMBaseAPIManager *)manager {
+    
+    [self.moonStoreTableView.mj_header endRefreshing];
+    [self.moonStoreTableView.mj_footer endRefreshing];
+    
+    [BMShowHUD dismiss:self.view];
+    
+    NSDictionary *responseData = [manager fetchDataWithReformer:nil];
+    if (manager == self.&lt;#manager#&gt;) {
+        &lt;#code#&gt;
+    }
+}
+
+- (void)managerCallApiDidFailed:(BMBaseAPIManager *)manager {
+    
+    [self.moonStoreTableView.mj_header endRefreshing];
+    [self.moonStoreTableView.mj_footer endRefreshing];
+    
+    [BMManagerMsgShow showPromptMessageWithManager:manager toView:self.view];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>11575D73-B698-4D2D-8491-A727E6A70E4E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>api</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>api</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

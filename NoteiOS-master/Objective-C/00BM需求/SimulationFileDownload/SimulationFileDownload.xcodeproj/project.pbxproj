@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F11F224452D00B105892031 /* libPods-SimulationFileDownload.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C473C7F76D41911D448DD0 /* libPods-SimulationFileDownload.a */; };
+		323C5E881DFE98BE004D5E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323C5E861DFE98BE004D5E0F /* Main.storyboard */; };
+		323C5E8A1DFE98BE004D5E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323C5E891DFE98BE004D5E0F /* Assets.xcassets */; };
+		323C5E8D1DFE98BE004D5E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323C5E8B1DFE98BE004D5E0F /* LaunchScreen.storyboard */; };
+		323C5E981DFE98BE004D5E0F /* SimulationFileDownloadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 323C5E971DFE98BE004D5E0F /* SimulationFileDownloadTests.m */; };
+		323C5EA31DFE98BE004D5E0F /* SimulationFileDownloadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 323C5EA21DFE98BE004D5E0F /* SimulationFileDownloadUITests.m */; };
+		323C5EDD1DFE9925004D5E0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 323C5EC61DFE9925004D5E0F /* AppDelegate.m */; };
+		323C5EDE1DFE9925004D5E0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 323C5EC71DFE9925004D5E0F /* main.m */; };
+		323C5EE91DFE9941004D5E0F /* BMSimulationFileDownloadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 323C5EE71DFE9941004D5E0F /* BMSimulationFileDownloadVC.m */; };
+		323C5EEA1DFE9941004D5E0F /* BMSimulationFileDownloadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323C5EE81DFE9941004D5E0F /* BMSimulationFileDownloadVC.xib */; };
+		323C5EEE1DFE9953004D5E0F /* BMSimulationFileDownloadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 323C5EEC1DFE9953004D5E0F /* BMSimulationFileDownloadCell.m */; };
+		323C5EEF1DFE9953004D5E0F /* BMSimulationFileDownloadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323C5EED1DFE9953004D5E0F /* BMSimulationFileDownloadCell.xib */; };
+		323C5EF21DFE9984004D5E0F /* BMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323C5EF11DFE9984004D5E0F /* BMViewController.m */; };
+		323C5EF51DFE9BDF004D5E0F /* BMSimulationFileDownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 323C5EF41DFE9BDF004D5E0F /* BMSimulationFileDownloadModel.m */; };
+		32BE94121DFE9F9100C63E04 /* UIProgressView+BMFDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BE94111DFE9F9100C63E04 /* UIProgressView+BMFDownload.m */; };
+		32BE94161DFEA13E00C63E04 /* BMFileDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BE94151DFEA13E00C63E04 /* BMFileDownloadManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		323C5E941DFE98BE004D5E0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 323C5E721DFE98BE004D5E0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 323C5E791DFE98BE004D5E0F;
+			remoteInfo = SimulationFileDownload;
+		};
+		323C5E9F1DFE98BE004D5E0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 323C5E721DFE98BE004D5E0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 323C5E791DFE98BE004D5E0F;
+			remoteInfo = SimulationFileDownload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FBE30CA743DCB8EF27560A3 /* Pods-SimulationFileDownload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimulationFileDownload.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimulationFileDownload/Pods-SimulationFileDownload.release.xcconfig"; sourceTree = "<group>"; };
+		323C5E7A1DFE98BE004D5E0F /* SimulationFileDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimulationFileDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		323C5E871DFE98BE004D5E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		323C5E891DFE98BE004D5E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		323C5E8C1DFE98BE004D5E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		323C5E8E1DFE98BE004D5E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323C5E931DFE98BE004D5E0F /* SimulationFileDownloadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimulationFileDownloadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		323C5E971DFE98BE004D5E0F /* SimulationFileDownloadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulationFileDownloadTests.m; sourceTree = "<group>"; };
+		323C5E991DFE98BE004D5E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323C5E9E1DFE98BE004D5E0F /* SimulationFileDownloadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimulationFileDownloadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		323C5EA21DFE98BE004D5E0F /* SimulationFileDownloadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulationFileDownloadUITests.m; sourceTree = "<group>"; };
+		323C5EA41DFE98BE004D5E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323C5EC51DFE9925004D5E0F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		323C5EC61DFE9925004D5E0F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		323C5EC71DFE9925004D5E0F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		323C5EE61DFE9941004D5E0F /* BMSimulationFileDownloadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSimulationFileDownloadVC.h; sourceTree = "<group>"; };
+		323C5EE71DFE9941004D5E0F /* BMSimulationFileDownloadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSimulationFileDownloadVC.m; sourceTree = "<group>"; };
+		323C5EE81DFE9941004D5E0F /* BMSimulationFileDownloadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMSimulationFileDownloadVC.xib; sourceTree = "<group>"; };
+		323C5EEB1DFE9953004D5E0F /* BMSimulationFileDownloadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSimulationFileDownloadCell.h; sourceTree = "<group>"; };
+		323C5EEC1DFE9953004D5E0F /* BMSimulationFileDownloadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSimulationFileDownloadCell.m; sourceTree = "<group>"; };
+		323C5EED1DFE9953004D5E0F /* BMSimulationFileDownloadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMSimulationFileDownloadCell.xib; sourceTree = "<group>"; };
+		323C5EF01DFE9984004D5E0F /* BMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMViewController.h; sourceTree = "<group>"; };
+		323C5EF11DFE9984004D5E0F /* BMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMViewController.m; sourceTree = "<group>"; };
+		323C5EF31DFE9BDF004D5E0F /* BMSimulationFileDownloadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSimulationFileDownloadModel.h; sourceTree = "<group>"; };
+		323C5EF41DFE9BDF004D5E0F /* BMSimulationFileDownloadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSimulationFileDownloadModel.m; sourceTree = "<group>"; };
+		32BE94101DFE9F9100C63E04 /* UIProgressView+BMFDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+BMFDownload.h"; sourceTree = "<group>"; };
+		32BE94111DFE9F9100C63E04 /* UIProgressView+BMFDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+BMFDownload.m"; sourceTree = "<group>"; };
+		32BE94141DFEA13E00C63E04 /* BMFileDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFileDownloadManager.h; sourceTree = "<group>"; };
+		32BE94151DFEA13E00C63E04 /* BMFileDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFileDownloadManager.m; sourceTree = "<group>"; };
+		46EE07311847896BA07E54FD /* Pods-SimulationFileDownload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimulationFileDownload.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimulationFileDownload/Pods-SimulationFileDownload.debug.xcconfig"; sourceTree = "<group>"; };
+		79C473C7F76D41911D448DD0 /* libPods-SimulationFileDownload.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimulationFileDownload.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F3FB4FFEBC1CF2D3FB00A1 /* libPods-SimulationFileDownloadUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimulationFileDownloadUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5355D02DC773679FB82F757 /* libPods-SimulationFileDownloadTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimulationFileDownloadTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		323C5E771DFE98BE004D5E0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F11F224452D00B105892031 /* libPods-SimulationFileDownload.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323C5E901DFE98BE004D5E0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323C5E9B1DFE98BE004D5E0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		323C5E711DFE98BE004D5E0F = {
+			isa = PBXGroup;
+			children = (
+				323C5E7C1DFE98BE004D5E0F /* SimulationFileDownload */,
+				323C5E961DFE98BE004D5E0F /* SimulationFileDownloadTests */,
+				323C5EA11DFE98BE004D5E0F /* SimulationFileDownloadUITests */,
+				323C5E7B1DFE98BE004D5E0F /* Products */,
+				C199B23B91C69CE10842F6C1 /* Pods */,
+				9194C58F0053F184237F7FE6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		323C5E7B1DFE98BE004D5E0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				323C5E7A1DFE98BE004D5E0F /* SimulationFileDownload.app */,
+				323C5E931DFE98BE004D5E0F /* SimulationFileDownloadTests.xctest */,
+				323C5E9E1DFE98BE004D5E0F /* SimulationFileDownloadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		323C5E7C1DFE98BE004D5E0F /* SimulationFileDownload */ = {
+			isa = PBXGroup;
+			children = (
+				32BE94131DFEA13E00C63E04 /* BMFileDownloadManager */,
+				323C5EC41DFE9925004D5E0F /* app */,
+				323C5ECA1DFE9925004D5E0F /* classs */,
+				323C5E861DFE98BE004D5E0F /* Main.storyboard */,
+				323C5E891DFE98BE004D5E0F /* Assets.xcassets */,
+				323C5E8B1DFE98BE004D5E0F /* LaunchScreen.storyboard */,
+				323C5E8E1DFE98BE004D5E0F /* Info.plist */,
+				323C5E7D1DFE98BE004D5E0F /* Supporting Files */,
+			);
+			path = SimulationFileDownload;
+			sourceTree = "<group>";
+		};
+		323C5E7D1DFE98BE004D5E0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		323C5E961DFE98BE004D5E0F /* SimulationFileDownloadTests */ = {
+			isa = PBXGroup;
+			children = (
+				323C5E971DFE98BE004D5E0F /* SimulationFileDownloadTests.m */,
+				323C5E991DFE98BE004D5E0F /* Info.plist */,
+			);
+			path = SimulationFileDownloadTests;
+			sourceTree = "<group>";
+		};
+		323C5EA11DFE98BE004D5E0F /* SimulationFileDownloadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				323C5EA21DFE98BE004D5E0F /* SimulationFileDownloadUITests.m */,
+				323C5EA41DFE98BE004D5E0F /* Info.plist */,
+			);
+			path = SimulationFileDownloadUITests;
+			sourceTree = "<group>";
+		};
+		323C5EC41DFE9925004D5E0F /* app */ = {
+			isa = PBXGroup;
+			children = (
+				323C5EC71DFE9925004D5E0F /* main.m */,
+				323C5EC51DFE9925004D5E0F /* AppDelegate.h */,
+				323C5EC61DFE9925004D5E0F /* AppDelegate.m */,
+				323C5EF01DFE9984004D5E0F /* BMViewController.h */,
+				323C5EF11DFE9984004D5E0F /* BMViewController.m */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		323C5ECA1DFE9925004D5E0F /* classs */ = {
+			isa = PBXGroup;
+			children = (
+				323C5ECB1DFE9925004D5E0F /* c */,
+				323C5ECC1DFE9925004D5E0F /* m */,
+				323C5ECD1DFE9925004D5E0F /* v */,
+			);
+			path = classs;
+			sourceTree = "<group>";
+		};
+		323C5ECB1DFE9925004D5E0F /* c */ = {
+			isa = PBXGroup;
+			children = (
+				323C5EE61DFE9941004D5E0F /* BMSimulationFileDownloadVC.h */,
+				323C5EE71DFE9941004D5E0F /* BMSimulationFileDownloadVC.m */,
+				323C5EE81DFE9941004D5E0F /* BMSimulationFileDownloadVC.xib */,
+			);
+			path = c;
+			sourceTree = "<group>";
+		};
+		323C5ECC1DFE9925004D5E0F /* m */ = {
+			isa = PBXGroup;
+			children = (
+				323C5EF31DFE9BDF004D5E0F /* BMSimulationFileDownloadModel.h */,
+				323C5EF41DFE9BDF004D5E0F /* BMSimulationFileDownloadModel.m */,
+			);
+			path = m;
+			sourceTree = "<group>";
+		};
+		323C5ECD1DFE9925004D5E0F /* v */ = {
+			isa = PBXGroup;
+			children = (
+				323C5EEB1DFE9953004D5E0F /* BMSimulationFileDownloadCell.h */,
+				323C5EEC1DFE9953004D5E0F /* BMSimulationFileDownloadCell.m */,
+				323C5EED1DFE9953004D5E0F /* BMSimulationFileDownloadCell.xib */,
+				32BE94101DFE9F9100C63E04 /* UIProgressView+BMFDownload.h */,
+				32BE94111DFE9F9100C63E04 /* UIProgressView+BMFDownload.m */,
+			);
+			path = v;
+			sourceTree = "<group>";
+		};
+		32BE94131DFEA13E00C63E04 /* BMFileDownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				32BE94141DFEA13E00C63E04 /* BMFileDownloadManager.h */,
+				32BE94151DFEA13E00C63E04 /* BMFileDownloadManager.m */,
+			);
+			path = BMFileDownloadManager;
+			sourceTree = "<group>";
+		};
+		9194C58F0053F184237F7FE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79C473C7F76D41911D448DD0 /* libPods-SimulationFileDownload.a */,
+				B5355D02DC773679FB82F757 /* libPods-SimulationFileDownloadTests.a */,
+				A3F3FB4FFEBC1CF2D3FB00A1 /* libPods-SimulationFileDownloadUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C199B23B91C69CE10842F6C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46EE07311847896BA07E54FD /* Pods-SimulationFileDownload.debug.xcconfig */,
+				2FBE30CA743DCB8EF27560A3 /* Pods-SimulationFileDownload.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		323C5E791DFE98BE004D5E0F /* SimulationFileDownload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323C5EA71DFE98BE004D5E0F /* Build configuration list for PBXNativeTarget "SimulationFileDownload" */;
+			buildPhases = (
+				0D211084D8DE7FFB938E9118 /* [CP] Check Pods Manifest.lock */,
+				323C5E761DFE98BE004D5E0F /* Sources */,
+				323C5E771DFE98BE004D5E0F /* Frameworks */,
+				323C5E781DFE98BE004D5E0F /* Resources */,
+				CBE10287622C5B7B1422DBFF /* [CP] Embed Pods Frameworks */,
+				BF0FCE90FABFCBBCD9218269 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimulationFileDownload;
+			productName = SimulationFileDownload;
+			productReference = 323C5E7A1DFE98BE004D5E0F /* SimulationFileDownload.app */;
+			productType = "com.apple.product-type.application";
+		};
+		323C5E921DFE98BE004D5E0F /* SimulationFileDownloadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323C5EAA1DFE98BE004D5E0F /* Build configuration list for PBXNativeTarget "SimulationFileDownloadTests" */;
+			buildPhases = (
+				323C5E8F1DFE98BE004D5E0F /* Sources */,
+				323C5E901DFE98BE004D5E0F /* Frameworks */,
+				323C5E911DFE98BE004D5E0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				323C5E951DFE98BE004D5E0F /* PBXTargetDependency */,
+			);
+			name = SimulationFileDownloadTests;
+			productName = SimulationFileDownloadTests;
+			productReference = 323C5E931DFE98BE004D5E0F /* SimulationFileDownloadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		323C5E9D1DFE98BE004D5E0F /* SimulationFileDownloadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323C5EAD1DFE98BE004D5E0F /* Build configuration list for PBXNativeTarget "SimulationFileDownloadUITests" */;
+			buildPhases = (
+				323C5E9A1DFE98BE004D5E0F /* Sources */,
+				323C5E9B1DFE98BE004D5E0F /* Frameworks */,
+				323C5E9C1DFE98BE004D5E0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				323C5EA01DFE98BE004D5E0F /* PBXTargetDependency */,
+			);
+			name = SimulationFileDownloadUITests;
+			productName = SimulationFileDownloadUITests;
+			productReference = 323C5E9E1DFE98BE004D5E0F /* SimulationFileDownloadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		323C5E721DFE98BE004D5E0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = idhong.com;
+				TargetAttributes = {
+					323C5E791DFE98BE004D5E0F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8RB35RM424;
+						ProvisioningStyle = Automatic;
+					};
+					323C5E921DFE98BE004D5E0F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8RB35RM424;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 323C5E791DFE98BE004D5E0F;
+					};
+					323C5E9D1DFE98BE004D5E0F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8RB35RM424;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 323C5E791DFE98BE004D5E0F;
+					};
+				};
+			};
+			buildConfigurationList = 323C5E751DFE98BE004D5E0F /* Build configuration list for PBXProject "SimulationFileDownload" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 323C5E711DFE98BE004D5E0F;
+			productRefGroup = 323C5E7B1DFE98BE004D5E0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				323C5E791DFE98BE004D5E0F /* SimulationFileDownload */,
+				323C5E921DFE98BE004D5E0F /* SimulationFileDownloadTests */,
+				323C5E9D1DFE98BE004D5E0F /* SimulationFileDownloadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		323C5E781DFE98BE004D5E0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323C5EEA1DFE9941004D5E0F /* BMSimulationFileDownloadVC.xib in Resources */,
+				323C5E8D1DFE98BE004D5E0F /* LaunchScreen.storyboard in Resources */,
+				323C5E8A1DFE98BE004D5E0F /* Assets.xcassets in Resources */,
+				323C5EEF1DFE9953004D5E0F /* BMSimulationFileDownloadCell.xib in Resources */,
+				323C5E881DFE98BE004D5E0F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323C5E911DFE98BE004D5E0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323C5E9C1DFE98BE004D5E0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D211084D8DE7FFB938E9118 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF0FCE90FABFCBBCD9218269 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimulationFileDownload/Pods-SimulationFileDownload-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBE10287622C5B7B1422DBFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimulationFileDownload/Pods-SimulationFileDownload-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		323C5E761DFE98BE004D5E0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323C5EE91DFE9941004D5E0F /* BMSimulationFileDownloadVC.m in Sources */,
+				323C5EDE1DFE9925004D5E0F /* main.m in Sources */,
+				323C5EDD1DFE9925004D5E0F /* AppDelegate.m in Sources */,
+				323C5EF21DFE9984004D5E0F /* BMViewController.m in Sources */,
+				32BE94161DFEA13E00C63E04 /* BMFileDownloadManager.m in Sources */,
+				32BE94121DFE9F9100C63E04 /* UIProgressView+BMFDownload.m in Sources */,
+				323C5EEE1DFE9953004D5E0F /* BMSimulationFileDownloadCell.m in Sources */,
+				323C5EF51DFE9BDF004D5E0F /* BMSimulationFileDownloadModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323C5E8F1DFE98BE004D5E0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323C5E981DFE98BE004D5E0F /* SimulationFileDownloadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323C5E9A1DFE98BE004D5E0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323C5EA31DFE98BE004D5E0F /* SimulationFileDownloadUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		323C5E951DFE98BE004D5E0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 323C5E791DFE98BE004D5E0F /* SimulationFileDownload */;
+			targetProxy = 323C5E941DFE98BE004D5E0F /* PBXContainerItemProxy */;
+		};
+		323C5EA01DFE98BE004D5E0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 323C5E791DFE98BE004D5E0F /* SimulationFileDownload */;
+			targetProxy = 323C5E9F1DFE98BE004D5E0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		323C5E861DFE98BE004D5E0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323C5E871DFE98BE004D5E0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		323C5E8B1DFE98BE004D5E0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323C5E8C1DFE98BE004D5E0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		323C5EA51DFE98BE004D5E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		323C5EA61DFE98BE004D5E0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		323C5EA81DFE98BE004D5E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46EE07311847896BA07E54FD /* Pods-SimulationFileDownload.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = SimulationFileDownload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.SimulationFileDownload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		323C5EA91DFE98BE004D5E0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FBE30CA743DCB8EF27560A3 /* Pods-SimulationFileDownload.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = SimulationFileDownload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.SimulationFileDownload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		323C5EAB1DFE98BE004D5E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = SimulationFileDownloadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.SimulationFileDownloadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimulationFileDownload.app/SimulationFileDownload";
+			};
+			name = Debug;
+		};
+		323C5EAC1DFE98BE004D5E0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = SimulationFileDownloadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.SimulationFileDownloadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimulationFileDownload.app/SimulationFileDownload";
+			};
+			name = Release;
+		};
+		323C5EAE1DFE98BE004D5E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = SimulationFileDownloadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.SimulationFileDownloadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SimulationFileDownload;
+			};
+			name = Debug;
+		};
+		323C5EAF1DFE98BE004D5E0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = SimulationFileDownloadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.SimulationFileDownloadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SimulationFileDownload;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		323C5E751DFE98BE004D5E0F /* Build configuration list for PBXProject "SimulationFileDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323C5EA51DFE98BE004D5E0F /* Debug */,
+				323C5EA61DFE98BE004D5E0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323C5EA71DFE98BE004D5E0F /* Build configuration list for PBXNativeTarget "SimulationFileDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323C5EA81DFE98BE004D5E0F /* Debug */,
+				323C5EA91DFE98BE004D5E0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323C5EAA1DFE98BE004D5E0F /* Build configuration list for PBXNativeTarget "SimulationFileDownloadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323C5EAB1DFE98BE004D5E0F /* Debug */,
+				323C5EAC1DFE98BE004D5E0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323C5EAD1DFE98BE004D5E0F /* Build configuration list for PBXNativeTarget "SimulationFileDownloadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323C5EAE1DFE98BE004D5E0F /* Debug */,
+				323C5EAF1DFE98BE004D5E0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 323C5E721DFE98BE004D5E0F /* Project object */;
+}

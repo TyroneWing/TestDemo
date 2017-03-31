@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BMAdaptivePhotoSelectImageView">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="145"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="62o-D3-T1Z">
+                    <rect key="frame" x="0.0" y="8" width="180" height="137"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-D7-egt">
+                    <rect key="frame" x="168" y="0.0" width="20" height="20"/>
+                    <color key="backgroundColor" red="1" green="0.051987206375838924" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="IcH-cJ-JJs"/>
+                        <constraint firstAttribute="height" constant="20" id="VuK-P5-haj"/>
+                    </constraints>
+                    <state key="normal" title="x"/>
+                    <connections>
+                        <action selector="removeButtonClick" destination="iN0-l3-epB" eventType="touchUpInside" id="kii-ep-3Gb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="62o-D3-T1Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ESG-D4-d37"/>
+                <constraint firstAttribute="trailing" secondItem="bcf-D7-egt" secondAttribute="trailing" id="FOQ-cv-Y9a"/>
+                <constraint firstAttribute="bottom" secondItem="62o-D3-T1Z" secondAttribute="bottom" id="OCo-bd-gRA"/>
+                <constraint firstItem="bcf-D7-egt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PEr-bR-FsV"/>
+                <constraint firstAttribute="trailing" secondItem="62o-D3-T1Z" secondAttribute="trailing" constant="10" id="XCf-Ev-H20"/>
+                <constraint firstItem="62o-D3-T1Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="rpM-XH-RsR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="62o-D3-T1Z" id="982-K4-ojh"/>
+                <outlet property="removeButton" destination="bcf-D7-egt" id="zZP-bw-f1u"/>
+            </connections>
+            <point key="canvasLocation" x="582" y="256.5"/>
+        </view>
+    </objects>
+</document>

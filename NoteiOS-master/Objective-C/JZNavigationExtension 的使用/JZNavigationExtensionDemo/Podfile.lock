@@ -1,0 +1,12 @@
+PODS:
+  - JZNavigationExtension (1.5.0.1)
+
+DEPENDENCIES:
+  - JZNavigationExtension (~> 1.5.0.1)
+
+SPEC CHECKSUMS:
+  JZNavigationExtension: 7b95d2b1c48846b8bedcb40d767448f14cb9a0b7
+
+PODFILE CHECKSUM: 959d6b7d7a6c2fe091a5c1de0ef37da75382506e
+
+COCOAPODS: 1.1.1

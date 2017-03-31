@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BMScanInputSettingView">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="503"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nh-j9-PTc">
+                    <rect key="frame" x="62" y="423" width="200" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.42352941179999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="pdF-SH-IQl"/>
+                        <constraint firstAttribute="height" constant="40" id="xfg-Tr-3lm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="扫描二维码">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="scanfButtonClick" destination="iN0-l3-epB" eventType="touchUpInside" id="3zf-yi-uIX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhx-TJ-1Bp">
+                    <rect key="frame" x="80" y="160" width="164" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="164" id="3JX-nw-Gpr"/>
+                        <constraint firstAttribute="height" constant="35" id="q8e-Ax-gv7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="交付产品">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="determineButtonClick" destination="iN0-l3-epB" eventType="touchUpInside" id="3UU-Qe-uiT"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入收货验证数字码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OvQ-Dp-RNJ">
+                    <rect key="frame" x="57" y="100" width="210" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="210" id="JRz-II-6q6"/>
+                        <constraint firstAttribute="height" constant="40" id="VUq-RP-dLX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldChanged:" destination="iN0-l3-epB" eventType="editingChanged" id="Vzh-Lv-Ink"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1nh-j9-PTc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3r6-Db-frp"/>
+                <constraint firstItem="Vhx-TJ-1Bp" firstAttribute="centerX" secondItem="OvQ-Dp-RNJ" secondAttribute="centerX" id="Cub-bf-mGR"/>
+                <constraint firstAttribute="bottom" secondItem="1nh-j9-PTc" secondAttribute="bottom" constant="40" id="dap-3k-ko3"/>
+                <constraint firstItem="OvQ-Dp-RNJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="leC-ZP-XM0"/>
+                <constraint firstItem="OvQ-Dp-RNJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lzz-Ko-4qr"/>
+                <constraint firstItem="Vhx-TJ-1Bp" firstAttribute="top" secondItem="OvQ-Dp-RNJ" secondAttribute="bottom" constant="20" id="nmy-hL-GKS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="determineButton" destination="Vhx-TJ-1Bp" id="OD3-tp-hRt"/>
+                <outlet property="inputTestFieldTopLayoutCons" destination="leC-ZP-XM0" id="t4b-cl-Kh0"/>
+                <outlet property="inputTextField" destination="OvQ-Dp-RNJ" id="WOu-v0-1bW"/>
+                <outlet property="scanfButton" destination="1nh-j9-PTc" id="rr5-O5-uYT"/>
+            </connections>
+            <point key="canvasLocation" x="448" y="64.5"/>
+        </view>
+    </objects>
+</document>

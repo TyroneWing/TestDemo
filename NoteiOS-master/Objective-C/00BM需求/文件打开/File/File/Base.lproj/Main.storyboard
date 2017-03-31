@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="raN-c6-NGU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOj-yj-yXY">
+                                <rect key="frame" x="273" y="149" width="88" height="30"/>
+                                <state key="normal" title="自己app打开"/>
+                                <connections>
+                                    <segue destination="aZh-XR-dHo" kind="push" id="VF9-OO-Efm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znH-bZ-cez">
+                                <rect key="frame" x="252" y="214" width="103" height="30"/>
+                                <state key="normal" title="第三方app打开"/>
+                                <connections>
+                                    <segue destination="z9t-4R-hQD" kind="push" id="sWu-mb-Jgg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="znH-bZ-cez" firstAttribute="top" secondItem="zOj-yj-yXY" secondAttribute="bottom" constant="20" id="6DC-ZA-JOz"/>
+                            <constraint firstAttribute="trailing" secondItem="znH-bZ-cez" secondAttribute="trailing" constant="20" id="CWR-OP-4Jw"/>
+                            <constraint firstAttribute="trailing" secondItem="zOj-yj-yXY" secondAttribute="trailing" constant="20" id="PIU-mN-v02"/>
+                            <constraint firstItem="zOj-yj-yXY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="tb2-Ar-S99"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rvE-YT-y4J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="-866"/>
+        </scene>
+        <!--自己app-->
+        <scene sceneID="KaW-tI-j3W">
+            <objects>
+                <viewController id="aZh-XR-dHo" customClass="MySelfVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uW4-hJ-w8Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="P5t-aS-3JU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ejA-a1-CMp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cd4-az-7s9">
+                                <rect key="frame" x="254" y="84" width="101" height="30"/>
+                                <state key="normal" title="docx（Word）"/>
+                                <connections>
+                                    <action selector="word:" destination="aZh-XR-dHo" eventType="touchUpInside" id="27F-T8-uJC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsz-JI-wO5">
+                                <rect key="frame" x="236" y="134" width="119" height="30"/>
+                                <state key="normal" title="xlsx（电子表格）"/>
+                                <connections>
+                                    <action selector="xlsx:" destination="aZh-XR-dHo" eventType="touchUpInside" id="ACf-KL-3dK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXb-iG-nut">
+                                <rect key="frame" x="273" y="184" width="82" height="30"/>
+                                <state key="normal" title="ppt（PPT）"/>
+                                <connections>
+                                    <action selector="ppt:" destination="aZh-XR-dHo" eventType="touchUpInside" id="Hyz-Cw-6H1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1q-h0-6dK">
+                                <rect key="frame" x="227" y="234" width="128" height="30"/>
+                                <state key="normal" title="pdf（PDF文件夹）"/>
+                                <connections>
+                                    <action selector="pdf:" destination="aZh-XR-dHo" eventType="touchUpInside" id="KYM-1c-zFy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ojx-Mw-h5E">
+                                <rect key="frame" x="325" y="274" width="30" height="30"/>
+                                <state key="normal" title="png"/>
+                                <connections>
+                                    <action selector="png:" destination="aZh-XR-dHo" eventType="touchUpInside" id="BhT-BL-pnE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhV-pC-cMu">
+                                <rect key="frame" x="325" y="314" width="30" height="30"/>
+                                <state key="normal" title="java"/>
+                                <connections>
+                                    <action selector="java:" destination="aZh-XR-dHo" eventType="touchUpInside" id="Suu-tV-JYa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jsz-JI-wO5" firstAttribute="top" secondItem="cd4-az-7s9" secondAttribute="bottom" constant="20" id="2uL-N7-a7G"/>
+                            <constraint firstAttribute="trailing" secondItem="Jsz-JI-wO5" secondAttribute="trailing" constant="20" id="HnS-Tm-j1d"/>
+                            <constraint firstAttribute="trailing" secondItem="X1q-h0-6dK" secondAttribute="trailing" constant="20" id="KHt-Dn-a2E"/>
+                            <constraint firstAttribute="trailing" secondItem="Ojx-Mw-h5E" secondAttribute="trailing" constant="20" id="KxO-D5-2Ab"/>
+                            <constraint firstAttribute="trailing" secondItem="cd4-az-7s9" secondAttribute="trailing" constant="20" id="L8O-m1-5wx"/>
+                            <constraint firstItem="eXb-iG-nut" firstAttribute="top" secondItem="Jsz-JI-wO5" secondAttribute="bottom" constant="20" id="XdD-os-QaV"/>
+                            <constraint firstItem="cd4-az-7s9" firstAttribute="top" secondItem="uW4-hJ-w8Z" secondAttribute="bottom" constant="20" id="gBE-Ps-587"/>
+                            <constraint firstItem="X1q-h0-6dK" firstAttribute="top" secondItem="eXb-iG-nut" secondAttribute="bottom" constant="20" id="nVo-HN-Ljm"/>
+                            <constraint firstAttribute="trailing" secondItem="eXb-iG-nut" secondAttribute="trailing" constant="20" id="oih-wH-geo"/>
+                            <constraint firstAttribute="trailing" secondItem="IhV-pC-cMu" secondAttribute="trailing" constant="20" id="rkr-zb-yMe"/>
+                            <constraint firstItem="IhV-pC-cMu" firstAttribute="top" secondItem="Ojx-Mw-h5E" secondAttribute="bottom" constant="10" id="ym0-w5-MdT"/>
+                            <constraint firstItem="Ojx-Mw-h5E" firstAttribute="top" secondItem="X1q-h0-6dK" secondAttribute="bottom" constant="10" id="z0H-8a-sRz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="自己app" id="1aK-Zi-KWj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E47-9N-SB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1444" y="-663"/>
+        </scene>
+        <!--第三方-->
+        <scene sceneID="g0k-1Q-L8W">
+            <objects>
+                <viewController id="z9t-4R-hQD" customClass="LibVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c81-er-qgs"/>
+                        <viewControllerLayoutGuide type="bottom" id="VLI-pY-19C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="034-P1-fEl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYb-xu-qQn">
+                                <rect key="frame" x="254" y="84" width="101" height="30"/>
+                                <state key="normal" title="docx（Word）"/>
+                                <connections>
+                                    <action selector="word:" destination="z9t-4R-hQD" eventType="touchUpInside" id="5Hp-a9-Kj6"/>
+                                    <action selector="word:" destination="aZh-XR-dHo" eventType="touchUpInside" id="YsX-ED-8kV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNJ-FI-P30">
+                                <rect key="frame" x="236" y="134" width="119" height="30"/>
+                                <state key="normal" title="xlsx（电子表格）"/>
+                                <connections>
+                                    <action selector="xlsx:" destination="z9t-4R-hQD" eventType="touchUpInside" id="8Tg-V7-EmX"/>
+                                    <action selector="xlsx:" destination="aZh-XR-dHo" eventType="touchUpInside" id="Ikw-1x-VAy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCZ-yZ-PJ0">
+                                <rect key="frame" x="273" y="184" width="82" height="30"/>
+                                <state key="normal" title="ppt（PPT）"/>
+                                <connections>
+                                    <action selector="ppt:" destination="aZh-XR-dHo" eventType="touchUpInside" id="SyH-px-7yR"/>
+                                    <action selector="ppt:" destination="z9t-4R-hQD" eventType="touchUpInside" id="wuN-XA-Yca"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfq-LX-8Cm">
+                                <rect key="frame" x="227" y="234" width="128" height="30"/>
+                                <state key="normal" title="pdf（PDF文件夹）"/>
+                                <connections>
+                                    <action selector="pdf:" destination="aZh-XR-dHo" eventType="touchUpInside" id="GNC-1f-SPy"/>
+                                    <action selector="pdf:" destination="z9t-4R-hQD" eventType="touchUpInside" id="Ktw-8T-eyd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gw0-P4-63n">
+                                <rect key="frame" x="270" y="296" width="30" height="30"/>
+                                <state key="normal" title="png"/>
+                                <connections>
+                                    <action selector="png:" destination="z9t-4R-hQD" eventType="touchUpInside" id="gld-VT-8zW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvp-eX-ulo">
+                                <rect key="frame" x="277" y="412" width="30" height="30"/>
+                                <state key="normal" title="java"/>
+                                <connections>
+                                    <action selector="java:" destination="z9t-4R-hQD" eventType="touchUpInside" id="JV4-09-EMS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wfq-LX-8Cm" secondAttribute="trailing" constant="20" id="1My-mh-XL2"/>
+                            <constraint firstAttribute="trailing" secondItem="BNJ-FI-P30" secondAttribute="trailing" constant="20" id="AC5-Vi-4wx"/>
+                            <constraint firstItem="BNJ-FI-P30" firstAttribute="top" secondItem="KYb-xu-qQn" secondAttribute="bottom" constant="20" id="Odg-3I-IfQ"/>
+                            <constraint firstItem="KYb-xu-qQn" firstAttribute="top" secondItem="c81-er-qgs" secondAttribute="bottom" constant="20" id="Ofi-ci-cx7"/>
+                            <constraint firstItem="wfq-LX-8Cm" firstAttribute="top" secondItem="RCZ-yZ-PJ0" secondAttribute="bottom" constant="20" id="P0C-gp-NFU"/>
+                            <constraint firstAttribute="trailing" secondItem="RCZ-yZ-PJ0" secondAttribute="trailing" constant="20" id="aTm-iP-MCS"/>
+                            <constraint firstItem="gw0-P4-63n" firstAttribute="top" secondItem="wfq-LX-8Cm" secondAttribute="bottom" constant="20" id="g7R-su-RI4"/>
+                            <constraint firstItem="Qvp-eX-ulo" firstAttribute="top" secondItem="gw0-P4-63n" secondAttribute="bottom" constant="20" id="jKk-jX-nmE"/>
+                            <constraint firstItem="RCZ-yZ-PJ0" firstAttribute="top" secondItem="BNJ-FI-P30" secondAttribute="bottom" constant="20" id="n5T-11-9Or"/>
+                            <constraint firstAttribute="trailing" secondItem="gw0-P4-63n" secondAttribute="trailing" constant="20" id="qFi-Ce-rdb"/>
+                            <constraint firstAttribute="trailing" secondItem="KYb-xu-qQn" secondAttribute="trailing" constant="20" id="suE-13-nov"/>
+                            <constraint firstAttribute="trailing" secondItem="Qvp-eX-ulo" secondAttribute="trailing" constant="20" id="zsn-7g-wB8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="第三方" id="Wrb-yS-g5V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F1b-kx-4B3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2418" y="-889"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XBY-lp-emx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="raN-c6-NGU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dvv-FS-vOj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZqB-lt-j5v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2BO-R9-29d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-554" y="120"/>
+        </scene>
+    </scenes>
+</document>
