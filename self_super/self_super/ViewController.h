@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  RuntimeTest
+//  self_super
 //
-//  Created by yi on 17/3/31.
+//  Created by yi on 17/4/5.
 //  Copyright © 2017年 yi. All rights reserved.
 //
 
@@ -10,7 +10,6 @@
 
 @interface ViewController : UIViewController
 
-- (void)doesNotRecognizeSelector;
 
 @end
 

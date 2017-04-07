@@ -8,8 +8,12 @@
 
 #import "ViewController.h"
 #import "UIButton+Rect.h"
+#import "testLabel.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *aLabel;
+@property (weak, nonatomic) IBOutlet testLabel *bLabel;
 
 @end
 
@@ -28,7 +32,7 @@
     [btn setImage:[UIImage imageNamed:@"test.png"] forState:UIControlStateNormal];
     [btn setTitle:@"没有使用Rect" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.view addSubview:btn];
+    //[self.view addSubview:btn];
     
 
     UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake(100, 300, 200, 100)];
@@ -39,11 +43,26 @@
     [btn2 setImage:[UIImage imageNamed:@"test.png"] forState:UIControlStateNormal];
     [btn2 setTitle:@"使用Rect" forState:UIControlStateNormal];
     [btn2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.view addSubview:btn2];
+    //[self.view addSubview:btn2];
     
     
+    NSArray *arr = @[@"1",@"2",@"3"];
     
+    NSLog(@"arr = %@",arr[1]);
     
+    //[self doesNotRecognizeSelector];
+    
+}
+
+
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"touchesBegan ");
+    _aLabel.text = @"touchesBegantouchesBegantouchesBegan";
+    _bLabel.text = @"touchesBegantouchesBegantouchesBegan";
+
 }
 
 
