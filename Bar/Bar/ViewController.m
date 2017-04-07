@@ -23,9 +23,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _alabel.labelRect = CGSizeMake(30, 30);
-    //_alabel.labelRect = CGSizeMake(30, 30);
-
 }
 
 

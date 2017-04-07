@@ -18,6 +18,7 @@
 		1973132D1E9787C200B81041 /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1973132C1E9787C200B81041 /* SecViewController.m */; };
 		197313301E97899500B81041 /* testLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1973132F1E97899500B81041 /* testLabel.m */; };
 		197313331E978BE300B81041 /* UILabel+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 197313321E978BE300B81041 /* UILabel+Ext.m */; };
+		197313361E9797D700B81041 /* UIView+BMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 197313351E9797D700B81041 /* UIView+BMExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		1973132F1E97899500B81041 /* testLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testLabel.m; sourceTree = "<group>"; };
 		197313311E978BE300B81041 /* UILabel+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Ext.h"; sourceTree = "<group>"; };
 		197313321E978BE300B81041 /* UILabel+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Ext.m"; sourceTree = "<group>"; };
+		197313341E9797D700B81041 /* UIView+BMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BMExtension.h"; sourceTree = "<group>"; };
+		197313351E9797D700B81041 /* UIView+BMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BMExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				1973132F1E97899500B81041 /* testLabel.m */,
 				197313311E978BE300B81041 /* UILabel+Ext.h */,
 				197313321E978BE300B81041 /* UILabel+Ext.m */,
+				197313341E9797D700B81041 /* UIView+BMExtension.h */,
+				197313351E9797D700B81041 /* UIView+BMExtension.m */,
 				197313011E9787A700B81041 /* Main.storyboard */,
 				197313041E9787A700B81041 /* Assets.xcassets */,
 				197313061E9787A700B81041 /* LaunchScreen.storyboard */,
@@ -294,6 +299,7 @@
 				197312FA1E9787A700B81041 /* main.m in Sources */,
 				197313331E978BE300B81041 /* UILabel+Ext.m in Sources */,
 				197313301E97899500B81041 /* testLabel.m in Sources */,
+				197313361E9797D700B81041 /* UIView+BMExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

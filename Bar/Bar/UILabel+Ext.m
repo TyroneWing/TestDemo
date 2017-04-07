@@ -13,12 +13,12 @@
 @implementation UILabel (Ext)
 
 
-- (void)setLabelRect:(CGSize)labelRect
+- (void)setMarginRect:(CGSize)marginRect
 {
-    objc_setAssociatedObject(self, @selector(labelRect), [NSValue valueWithCGSize:labelRect] , OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(marginRect), [NSValue valueWithCGSize:marginRect] , OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (CGSize)labelRect
+- (CGSize)marginRect
 {
     return [objc_getAssociatedObject(self, _cmd) CGSizeValue];
 }
@@ -55,9 +55,9 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 - (CGSize)zy_intrinsicContentSize
 {
     //设置了值就返回设置的值,否则用系统的
-    if (!CGSizeEqualToSize(self.labelRect,CGSizeZero)) {
+    if (!CGSizeEqualToSize(self.marginRect,CGSizeZero)) {
         CGSize originalSize = [super intrinsicContentSize];
-        CGSize size = CGSizeMake(originalSize.width+self.labelRect.width, originalSize.height+self.labelRect.height);
+        CGSize size = CGSizeMake(originalSize.width+self.marginRect.width, originalSize.height+self.marginRect.height);
         return size;
     }
     return [self zy_intrinsicContentSize];

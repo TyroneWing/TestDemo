@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UILabel (Ext)
-@property (nonatomic,assign) CGSize labelRect;
+@property (nonatomic,assign) IBInspectable CGSize marginRect;
 @end
