@@ -64,5 +64,9 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 }
 
 
+//- (CGSize)sizeThatFits:(CGSize)size
+//{
+//    return CGSizeMake(size.width+5, size.height+5);
+//}
 
 @end
