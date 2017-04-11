@@ -10,4 +10,7 @@
 
 @interface UILabel (Ext)
 @property (nonatomic,assign) IBInspectable CGSize marginRect;
+
+- (void)sizeThatFitWithSize:(CGSize)size;
+
 @end

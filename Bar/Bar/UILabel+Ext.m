@@ -64,6 +64,14 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 }
 
 
+- (void)sizeThatFitWithSize:(CGSize)size
+{
+    CGSize sizeThatFits = [self sizeThatFits:self.frame.size];
+    NSLog(@"---- %f  %f ----", sizeThatFits.width, sizeThatFits.height);
+    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, sizeThatFits.width+10, sizeThatFits.height+10);
+}
+
+
 //- (CGSize)sizeThatFits:(CGSize)size
 //{
 //    return CGSizeMake(size.width+5, size.height+5);
