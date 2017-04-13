@@ -13,7 +13,7 @@
 @implementation UILabel (Ext)
 
 
-- (void)zy_setMarginRect:(CGSize)zy_marginRect
+- (void)setZy_marginRect:(CGSize)zy_marginRect
 {
     objc_setAssociatedObject(self, @selector(zy_marginRect), [NSValue valueWithCGSize:zy_marginRect] , OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

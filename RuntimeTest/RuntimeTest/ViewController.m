@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "UIButton+Rect.h"
 #import "testLabel.h"
+#import "UIAlertView+Block.h"
+
 
 @interface ViewController ()
 
@@ -52,16 +54,30 @@
     
     //[self doesNotRecognizeSelector];
     
+    
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"test" message:@"======" delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+//    [alert showUsingBlock:^(UIAlertView *alertView, NSInteger buttonIndex) {
+//        
+//        NSLog(@"buttonIndex = %ld",buttonIndex);
+//    }];
+
+   
 }
-
-
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    NSLog(@"touchesBegan ");
-    _aLabel.text = @"touchesBegantouchesBegantouchesBegan";
-    _bLabel.text = @"touchesBegantouchesBegantouchesBegan";
+//    NSLog(@"touchesBegan ");
+//    _aLabel.text = @"touchesBegantouchesBegantouchesBegan";
+//    _bLabel.text = @"touchesBegantouchesBegantouchesBegan";
+    
+    
+    
+    UIAlertController *alertvc = [UIAlertController alertControllerWithTitle:@"test" message:@"=====" preferredStyle:UIAlertControllerStyleAlert];
+    
+    [self presentViewController:alertvc animated:YES completion:^{
+        
+    }];
 
 }
 

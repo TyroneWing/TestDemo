@@ -19,6 +19,7 @@
 		197313301E97899500B81041 /* testLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1973132F1E97899500B81041 /* testLabel.m */; };
 		197313331E978BE300B81041 /* UILabel+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 197313321E978BE300B81041 /* UILabel+Ext.m */; };
 		197313361E9797D700B81041 /* UIView+BMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 197313351E9797D700B81041 /* UIView+BMExtension.m */; };
+		31A883101E9F323D00FC03E0 /* ZYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A8830F1E9F323D00FC03E0 /* ZYTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		197313321E978BE300B81041 /* UILabel+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Ext.m"; sourceTree = "<group>"; };
 		197313341E9797D700B81041 /* UIView+BMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BMExtension.h"; sourceTree = "<group>"; };
 		197313351E9797D700B81041 /* UIView+BMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BMExtension.m"; sourceTree = "<group>"; };
+		31A8830E1E9F323D00FC03E0 /* ZYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTabBarController.h; sourceTree = "<group>"; };
+		31A8830F1E9F323D00FC03E0 /* ZYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				197312FC1E9787A700B81041 /* AppDelegate.m */,
 				197312FE1E9787A700B81041 /* ViewController.h */,
 				197312FF1E9787A700B81041 /* ViewController.m */,
+				31A8830E1E9F323D00FC03E0 /* ZYTabBarController.h */,
+				31A8830F1E9F323D00FC03E0 /* ZYTabBarController.m */,
 				1973132B1E9787C200B81041 /* SecViewController.h */,
 				1973132C1E9787C200B81041 /* SecViewController.m */,
 				1973132E1E97899500B81041 /* testLabel.h */,
@@ -295,6 +300,7 @@
 			files = (
 				1973132D1E9787C200B81041 /* SecViewController.m in Sources */,
 				197313001E9787A700B81041 /* ViewController.m in Sources */,
+				31A883101E9F323D00FC03E0 /* ZYTabBarController.m in Sources */,
 				197312FD1E9787A700B81041 /* AppDelegate.m in Sources */,
 				197312FA1E9787A700B81041 /* main.m in Sources */,
 				197313331E978BE300B81041 /* UILabel+Ext.m in Sources */,

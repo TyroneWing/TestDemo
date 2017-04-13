@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UILabel (Ext)
-@property (nonatomic,assign,setter=zy_setMarginRect:) IBInspectable CGSize zy_marginRect;
+@property (nonatomic,assign) IBInspectable CGSize zy_marginRect;
 
 
 - (void)zy_sizeToFit;

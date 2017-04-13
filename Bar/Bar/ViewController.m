@@ -30,7 +30,7 @@
     _dlabel.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:_dlabel];
     _dlabel.text = @"123";
-//    _dlabel.marginRect = CGSizeMake(10, 10);
+    _dlabel.zy_marginRect = CGSizeMake(10, 10);
     
 //    CGSize sizeThatFits = [_dlabel sizeThatFits:_dlabel.frame.size];
 //    NSLog(@"---- %f  %f ----", sizeThatFits.width, sizeThatFits.height);
@@ -38,7 +38,6 @@
     
     [_dlabel zy_sizeToFit];
 
-    
 }
 
 
