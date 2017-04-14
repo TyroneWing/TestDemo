@@ -52,6 +52,8 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
     });
 }
 
+
+//intrinsicContentSize xib才会调用
 - (CGSize)zy_intrinsicContentSize
 {
     //设置了值就返回设置的值,否则用系统的
@@ -63,7 +65,7 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
     return [self zy_intrinsicContentSize];
 }
 
-
+//code才会调用
 - (void)sizeThatFitWithSize:(CGSize)size
 {
     CGSize sizeThatFits = [self sizeThatFits:self.frame.size];

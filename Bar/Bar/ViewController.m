@@ -51,7 +51,8 @@
     
     NSLog(@"%@",NSStringFromCGRect(_dlabel.frame));
     _dlabel.text = @"77878888888";
-    [_dlabel sizeToFit];
+    //[_dlabel sizeToFit];
+    [_dlabel sizeThatFitWithSize:CGSizeMake(20, 20)];
     NSLog(@"%@",NSStringFromCGRect(_dlabel.frame));
 
 }
