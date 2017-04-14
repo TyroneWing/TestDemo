@@ -30,15 +30,14 @@
     _dlabel.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:_dlabel];
     _dlabel.text = @"123";
-//    _dlabel.marginRect = CGSizeMake(10, 10);
+    _dlabel.zy_marginRect = CGSizeMake(10, 10);
     
 //    CGSize sizeThatFits = [_dlabel sizeThatFits:_dlabel.frame.size];
 //    NSLog(@"---- %f  %f ----", sizeThatFits.width, sizeThatFits.height);
 //    _dlabel.frame = CGRectMake(100, 300, sizeThatFits.width+10, sizeThatFits.height+10);
     
-    [_dlabel sizeThatFitWithSize:CGSizeMake(20, 20)];
-    
-//    [_dlabel sizeToFit];
+    [_dlabel zy_sizeToFit];
+
 }
 
 
@@ -51,8 +50,12 @@
     
     NSLog(@"%@",NSStringFromCGRect(_dlabel.frame));
     _dlabel.text = @"77878888888";
+<<<<<<< HEAD
     //[_dlabel sizeToFit];
     [_dlabel sizeThatFitWithSize:CGSizeMake(20, 20)];
+=======
+    [_dlabel zy_sizeToFit];
+>>>>>>> a620e54ea73c2cac2445a3bffe49d1c2f463d1e6
     NSLog(@"%@",NSStringFromCGRect(_dlabel.frame));
 
 }

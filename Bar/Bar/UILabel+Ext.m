@@ -13,12 +13,12 @@
 @implementation UILabel (Ext)
 
 
-- (void)setMarginRect:(CGSize)marginRect
+- (void)setZy_marginRect:(CGSize)zy_marginRect
 {
-    objc_setAssociatedObject(self, @selector(marginRect), [NSValue valueWithCGSize:marginRect] , OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(zy_marginRect), [NSValue valueWithCGSize:zy_marginRect] , OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (CGSize)marginRect
+- (CGSize)zy_marginRect
 {
     return [objc_getAssociatedObject(self, _cmd) CGSizeValue];
 }
@@ -57,20 +57,29 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 - (CGSize)zy_intrinsicContentSize
 {
     //设置了值就返回设置的值,否则用系统的
-    if (!CGSizeEqualToSize(self.marginRect,CGSizeZero)) {
+    if (!CGSizeEqualToSize(self.zy_marginRect,CGSizeZero)) {
         CGSize originalSize = [super intrinsicContentSize];
-        CGSize size = CGSizeMake(originalSize.width+self.marginRect.width, originalSize.height+self.marginRect.height);
+        CGSize size = CGSizeMake(originalSize.width+self.zy_marginRect.width, originalSize.height+self.zy_marginRect.height);
         return size;
     }
     return [self zy_intrinsicContentSize];
 }
 
+<<<<<<< HEAD
 //code才会调用
 - (void)sizeThatFitWithSize:(CGSize)size
+=======
+
+
+- (void)zy_sizeToFit
+>>>>>>> a620e54ea73c2cac2445a3bffe49d1c2f463d1e6
 {
-    CGSize sizeThatFits = [self sizeThatFits:self.frame.size];
-    NSLog(@"---- %f  %f ----", sizeThatFits.width, sizeThatFits.height);
-    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, sizeThatFits.width+10, sizeThatFits.height+10);
+    if (!CGSizeEqualToSize(self.zy_marginRect,CGSizeZero)) {
+        CGSize sizeThatFits = [self sizeThatFits:self.frame.size];
+        self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, sizeThatFits.width+self.zy_marginRect.width, sizeThatFits.height+self.zy_marginRect.height);
+    } else {
+        [self sizeToFit];
+    }
 }
 
 

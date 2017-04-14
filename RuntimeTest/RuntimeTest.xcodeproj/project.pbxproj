@@ -19,6 +19,7 @@
 		197611E51E8E4D3E0013188C /* RuntimeTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 197611E41E8E4D3E0013188C /* RuntimeTestUITests.m */; };
 		197611F51E8E4D510013188C /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 197611F21E8E4D510013188C /* test.png */; };
 		197611F61E8E4D510013188C /* UIButton+Rect.m in Sources */ = {isa = PBXBuildFile; fileRef = 197611F41E8E4D510013188C /* UIButton+Rect.m */; };
+		31622B791EA03C34007B7740 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 31622B781EA03C34007B7740 /* UIAlertView+Block.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		197611F21E8E4D510013188C /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		197611F31E8E4D510013188C /* UIButton+Rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Rect.h"; sourceTree = "<group>"; };
 		197611F41E8E4D510013188C /* UIButton+Rect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Rect.m"; sourceTree = "<group>"; };
+		31622B771EA03C33007B7740 /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
+		31622B781EA03C34007B7740 /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				197611F41E8E4D510013188C /* UIButton+Rect.m */,
 				197312E61E97698B00B81041 /* NSArray+Crash.h */,
 				197312E71E97698B00B81041 /* NSArray+Crash.m */,
+				31622B771EA03C33007B7740 /* UIAlertView+Block.h */,
+				31622B781EA03C34007B7740 /* UIAlertView+Block.m */,
 				197611C81E8E4D3D0013188C /* Main.storyboard */,
 				197611CB1E8E4D3E0013188C /* Assets.xcassets */,
 				197611CD1E8E4D3E0013188C /* LaunchScreen.storyboard */,
@@ -292,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31622B791EA03C34007B7740 /* UIAlertView+Block.m in Sources */,
 				197312EB1E97835100B81041 /* testLabel.m in Sources */,
 				197611C71E8E4D3D0013188C /* ViewController.m in Sources */,
 				197611F61E8E4D510013188C /* UIButton+Rect.m in Sources */,

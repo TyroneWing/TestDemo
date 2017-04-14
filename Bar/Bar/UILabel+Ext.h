@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UILabel (Ext)
-@property (nonatomic,assign) IBInspectable CGSize marginRect;
+@property (nonatomic,assign) IBInspectable CGSize zy_marginRect;
 
-- (void)sizeThatFitWithSize:(CGSize)size;
+
+- (void)zy_sizeToFit;
+
 
 @end
