@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31441A5F1EA82BC400224B66 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 31441A5E1EA82BC400224B66 /* Test.m */; };
+		31441A611EA82BCF00224B66 /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31441A601EA82BCF00224B66 /* Test.xib */; };
 		488DAAFD1B95BA2A00680E56 /* XXConvensionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 488DAAFB1B95BA2A00680E56 /* XXConvensionCell.m */; };
 		488DAAFE1B95BA2A00680E56 /* XXConvensionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488DAAFC1B95BA2A00680E56 /* XXConvensionCell.xib */; };
 		488DAB011B95BA4400680E56 /* XXMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488DAB001B95BA4400680E56 /* XXMainViewController.m */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31441A5D1EA82BC400224B66 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		31441A5E1EA82BC400224B66 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		31441A601EA82BCF00224B66 /* Test.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
 		488DAAFA1B95BA2A00680E56 /* XXConvensionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXConvensionCell.h; sourceTree = "<group>"; };
 		488DAAFB1B95BA2A00680E56 /* XXConvensionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXConvensionCell.m; sourceTree = "<group>"; };
 		488DAAFC1B95BA2A00680E56 /* XXConvensionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XXConvensionCell.xib; sourceTree = "<group>"; };
@@ -117,6 +122,9 @@
 				488DAAFF1B95BA4400680E56 /* XXMainViewController.h */,
 				488DAB001B95BA4400680E56 /* XXMainViewController.m */,
 				48B78BC01A5E382400B662F7 /* Main.storyboard */,
+				31441A5D1EA82BC400224B66 /* Test.h */,
+				31441A5E1EA82BC400224B66 /* Test.m */,
+				31441A601EA82BCF00224B66 /* Test.xib */,
 				48B78BC31A5E382400B662F7 /* Images.xcassets */,
 				48B78BC51A5E382400B662F7 /* LaunchScreen.xib */,
 				488DAAF91B95B9F900680E56 /* Nib Convention */,
@@ -261,6 +269,7 @@
 			files = (
 				48B78BC21A5E382400B662F7 /* Main.storyboard in Resources */,
 				48B78BEA1A5E6B2700B662F7 /* XXDogeView.xib in Resources */,
+				31441A611EA82BCF00224B66 /* Test.xib in Resources */,
 				48B78BC71A5E382400B662F7 /* LaunchScreen.xib in Resources */,
 				48B78BC41A5E382400B662F7 /* Images.xcassets in Resources */,
 				48B78BEC1A5E6B2700B662F7 /* XXSarkView.xib in Resources */,
@@ -285,6 +294,7 @@
 				48B78BDF1A5E38AF00B662F7 /* XXNibBridge.m in Sources */,
 				48B78BE91A5E6B2700B662F7 /* XXDogeView.m in Sources */,
 				48B78BEB1A5E6B2700B662F7 /* XXSarkView.m in Sources */,
+				31441A5F1EA82BC400224B66 /* Test.m in Sources */,
 				488DAAFD1B95BA2A00680E56 /* XXConvensionCell.m in Sources */,
 				48ADAFEE1A5FD274008F2ED8 /* XXNibConvention.m in Sources */,
 				488DAB011B95BA4400680E56 /* XXMainViewController.m in Sources */,
