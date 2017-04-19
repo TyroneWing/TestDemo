@@ -36,9 +36,6 @@
     
     tabBarController.delegate = self;
     return YES;
-    
-    
-    return YES;
 }
 
 
