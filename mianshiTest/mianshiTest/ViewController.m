@@ -14,7 +14,7 @@
 
 @interface ViewController ()<UIScrollViewDelegate>
 {
-//    UIScrollView *scrollview;
+    UIScrollView *scrollview;
     UIView *view;
     
     UIView *boundView;
@@ -32,10 +32,10 @@
 //    [test test];
     
     
-//    scrollview = [[UIScrollView alloc] initWithFrame:CGRectMake(50, 50, 200, 400)];
-//    scrollview.contentSize = CGSizeMake(200, 500);
-//    scrollview.backgroundColor = [UIColor redColor];
-//    
+    scrollview = [[UIScrollView alloc] initWithFrame:CGRectMake(50, 50, 200, 400)];
+    scrollview.contentSize = CGSizeMake(200, 500);
+    scrollview.backgroundColor = [UIColor redColor];
+//
 //    view = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
 //    view.backgroundColor = [UIColor yellowColor];
 //    scrollview.maximumZoomScale = 4;
@@ -74,20 +74,22 @@
 
 
 
-- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
-{
-    //scrollView上的缩放手势，让view缩放
-    return view;
-}
-
-
-//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+//- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
 //{
+//    //scrollView上的缩放手势，让view缩放
+//    return view;
+//}
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
 //    boundView.bounds = CGRectMake(0, 0, 200, 200);
 //    NSLog(@"boundView.bounds %@",NSStringFromCGRect(boundView.bounds));
 //    NSLog(@"boundView.frame %@",NSStringFromCGRect(boundView.frame));
-//
-//}
+    
+       NSLog(@"scrollview.bounds = %@",NSStringFromCGRect(scrollview.bounds));
+
+}
 
 
 - (void)didReceiveMemoryWarning {

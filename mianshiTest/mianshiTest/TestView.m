@@ -8,7 +8,23 @@
 
 #import "TestView.h"
 
+@interface TestView ()
+
+@property (nonatomic,assign) int count;
+
+@end
+
+
 @implementation TestView
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _count = 10;
+    }
+    return self;
+}
 
 
 +(void)load

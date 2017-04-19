@@ -18,7 +18,7 @@
 
 - (void)test
 {
-    NSLog(@"TestView+Ext test");
+    NSLog(@"TestView+Ext test ");
 }
 
 

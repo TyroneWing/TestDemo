@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TestView : UIView
-
+//@property (nonatomic,assign) int count;
 @end
