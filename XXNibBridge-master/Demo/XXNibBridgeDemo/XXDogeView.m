@@ -16,9 +16,4 @@
 @implementation XXDogeView
 
 
-+ (BOOL)xx_shouldApplyNibBridging
-{
-    return YES;
-}
-
 @end

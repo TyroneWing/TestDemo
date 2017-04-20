@@ -24,10 +24,6 @@
     self.heightConstraint.constant = 81;
 }
 
-+ (BOOL)xx_shouldApplyNibBridging
-{
-    return YES;
-}
 
 
 @end

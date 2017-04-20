@@ -10,9 +10,4 @@
 
 @interface UILabel (Ext)
 @property (nonatomic,assign) IBInspectable CGSize zy_marginRect;
-
-
-- (void)zy_sizeToFit;
-
-
 @end

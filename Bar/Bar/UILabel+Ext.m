@@ -43,12 +43,11 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 
 + (void)load
 {
-    //load 时 已经交换了方法imageRectForContentRect 以及 zy_imageRectForContentRect
-    //这时系统调用 imageRectForContentRect 方法，其实是调用了 zy_imageRectForContentRect 方法
-    //相反，调用 zy_imageRectForContentRect 方法，其实是调用了 imageRectForContentRect 方法
+
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         swizzleMethod([self class], @selector(intrinsicContentSize), @selector(zy_intrinsicContentSize));
+        swizzleMethod([self class], @selector(sizeToFit), @selector(zy_sizeToFit));
     });
 }
 
@@ -56,7 +55,6 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 //intrinsicContentSize xib才会调用
 - (CGSize)zy_intrinsicContentSize
 {
-    //设置了值就返回设置的值,否则用系统的
     if (!CGSizeEqualToSize(self.zy_marginRect,CGSizeZero)) {
         CGSize originalSize = [super intrinsicContentSize];
         CGSize size = CGSizeMake(originalSize.width+self.zy_marginRect.width, originalSize.height+self.zy_marginRect.height);
@@ -65,27 +63,20 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
     return [self zy_intrinsicContentSize];
 }
 
-<<<<<<< HEAD
-//code才会调用
-- (void)sizeThatFitWithSize:(CGSize)size
-=======
-
 
 - (void)zy_sizeToFit
->>>>>>> a620e54ea73c2cac2445a3bffe49d1c2f463d1e6
 {
-    if (!CGSizeEqualToSize(self.zy_marginRect,CGSizeZero)) {
-        CGSize sizeThatFits = [self sizeThatFits:self.frame.size];
-        self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, sizeThatFits.width+self.zy_marginRect.width, sizeThatFits.height+self.zy_marginRect.height);
-    } else {
-        [self sizeToFit];
-    }
+//    if (!CGSizeEqualToSize(self.zy_marginRect,CGSizeZero)) {
+//        CGSize sizeThatFits = [self sizeThatFits:self.frame.size];
+//        self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, sizeThatFits.width+self.zy_marginRect.width, sizeThatFits.height+self.zy_marginRect.height);
+//    } else {
+//        [self zy_sizeToFit];
+//    }
+    
+    NSLog(@"sizeToFit");
+    [self zy_sizeToFit];
+
 }
 
-
-//- (CGSize)sizeThatFits:(CGSize)size
-//{
-//    return CGSizeMake(size.width+5, size.height+5);
-//}
 
 @end

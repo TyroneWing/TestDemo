@@ -16,7 +16,7 @@
 
 - (void)setImageRect:(CGRect)imageRect
 {
-    objc_setAssociatedObject(self, @selector(imageRect), [NSValue valueWithCGRect:imageRect] , OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, @selector(imageRect), [NSValue valueWithCGRect:imageRect] , OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (CGRect)imageRect
@@ -27,7 +27,7 @@
 
 -(void)setTitleRect:(CGRect)titleRect
 {
-    objc_setAssociatedObject(self, @selector(titleRect), [NSValue valueWithCGRect:titleRect] , OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, @selector(titleRect), [NSValue valueWithCGRect:titleRect] , OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (CGRect)titleRect

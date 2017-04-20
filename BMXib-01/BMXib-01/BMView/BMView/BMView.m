@@ -19,7 +19,9 @@
 
 - (instancetype)initWithCoder:(NSCoder *)coder {
     if (self = [super initWithCoder:coder]) {
-//        [self addUI];
+        NSLog(@"initWithCoder");
+
+        [self addUI];
     }
     return self;
 }
@@ -27,13 +29,14 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self addUI];
+        NSLog(@"initWithFrame");
     }
     return self;
 }
 
 - (instancetype)init {
     if (self = [super init]) {
-        [self addUI];
+        //[self addUI];
         
     }
     return self;
@@ -48,6 +51,7 @@
 
 - (UIView *)contentView {
     if (!_contentView) {
+        NSLog(@"create contentView");
         _contentView = [[[NSBundle bundleForClass:[self class]] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] firstObject];
         _contentView.backgroundColor = [UIColor orangeColor];
     }

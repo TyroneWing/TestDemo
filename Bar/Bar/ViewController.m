@@ -17,6 +17,7 @@
 
 @property (strong, nonatomic)  UILabel *dlabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *xibLabel;
 @end
 
 @implementation ViewController
@@ -30,13 +31,13 @@
     _dlabel.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:_dlabel];
     _dlabel.text = @"123";
-    _dlabel.zy_marginRect = CGSizeMake(10, 10);
+    //_dlabel.zy_marginRect = CGSizeMake(10, 10);
     
 //    CGSize sizeThatFits = [_dlabel sizeThatFits:_dlabel.frame.size];
 //    NSLog(@"---- %f  %f ----", sizeThatFits.width, sizeThatFits.height);
 //    _dlabel.frame = CGRectMake(100, 300, sizeThatFits.width+10, sizeThatFits.height+10);
     
-    [_dlabel zy_sizeToFit];
+   // [_dlabel sizeToFit];
 
 }
 
@@ -49,15 +50,15 @@
     
     
     NSLog(@"%@",NSStringFromCGRect(_dlabel.frame));
-    _dlabel.text = @"77878888888";
-<<<<<<< HEAD
-    //[_dlabel sizeToFit];
-    [_dlabel sizeThatFitWithSize:CGSizeMake(20, 20)];
-=======
-    [_dlabel zy_sizeToFit];
->>>>>>> a620e54ea73c2cac2445a3bffe49d1c2f463d1e6
+    _dlabel.text = @"77878888888";    //[_dlabel sizeToFit];
+    [_dlabel sizeToFit];
     NSLog(@"%@",NSStringFromCGRect(_dlabel.frame));
-
+    
+    
+    _xibLabel.text = @"系统lable-xib 修改";
+    _xibLabel.zy_marginRect = CGSizeMake(20, 20);
+    
+    //[_xibLabel sizeToFit];
 }
 
 

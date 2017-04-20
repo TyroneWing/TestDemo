@@ -19,6 +19,8 @@
     
     UIView *boundView;
 }
+
+@property (nonatomic,strong) UIAlertController *alertcontroller;
 @end
 
 @implementation ViewController
@@ -26,6 +28,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
     
     
 //    TestSubView *test = [[TestSubView alloc] init];
@@ -89,6 +93,110 @@
     
        NSLog(@"scrollview.bounds = %@",NSStringFromCGRect(scrollview.bounds));
 
+    //[self alertvc];
+    
+    [self alertVC];
+}
+
+
+
+- (void)alertVC
+{
+    //包含输入框的模式：
+    
+    //创建提示窗口 Title：标题 message：提示内容 Style:风格
+    self.alertcontroller = [UIAlertController alertControllerWithTitle:@"提示" message:@"请按提示操作！" preferredStyle:UIAlertControllerStyleAlert];
+    
+    __weak __typeof(&*self)weakSelf = self;//block 中防止循环引用
+    [self.alertcontroller addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        //通过通知监听textField的改变
+        [[NSNotificationCenter defaultCenter] addObserver:weakSelf selector:@selector(alertTextFieldDidChange:) name:UITextFieldTextDidChangeNotification object:textField];
+        
+        textField.placeholder = @"请输入六位用户名";
+        
+    }];
+    
+    
+    //实例化取消按钮
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        
+        NSLog(@"点击了取消...");
+        
+        
+    }];
+    
+    //实例化确定按钮
+    UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:nil];
+        //可以在这里获取textFields的信息
+        NSString *userName =   self.alertcontroller.textFields.lastObject.text;
+        NSLog(@"该用户名：%@",userName);
+        
+    }];
+    
+    
+    [_alertcontroller addAction:cancelAction];
+    [_alertcontroller addAction:sureAction];
+    //弹出提示框
+    [self presentViewController:self.alertcontroller animated:YES completion:nil];
+    
+    
+    
+
+}
+
+
+- (void)alertTextFieldDidChange:(NSNotification *)notification{
+    
+    NSString *userName =   self.alertcontroller.textFields.lastObject.text;
+    NSLog(@"该用户名：%@",userName);
+    
+    
+}
+
+- (void)alertvc
+{
+    //创建提示窗口 Title：标题 message：提示内容 Style:风格
+    self.alertcontroller = [UIAlertController alertControllerWithTitle:@"提示" message:@"请按提示操作！" preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    //实例化取消按钮
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        NSLog(@"点击了取消...");
+        
+        
+    }];
+    
+    //实例化确定按钮
+    UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        
+        
+        //对按钮应用标准样式：  UIAlertActionStyleDefault
+        //对按钮应用取消样式： UIAlertActionStyleCancel
+        //对按钮应用警示性的样式：UIAlertActionStyleDestructive
+        
+        
+        NSLog(@"点击了确定...");
+        
+    }];
+    
+    //实例化其他按钮
+    UIAlertAction *otherAction = [UIAlertAction actionWithTitle:@"其他" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        NSLog(@"点击了其他...");
+        
+    }];
+    
+    
+    [_alertcontroller addAction:cancelAction];
+    [_alertcontroller addAction:sureAction];
+    [_alertcontroller addAction:otherAction];
+    //弹出提示框
+    [self presentViewController:self.alertcontroller animated:YES completion:nil];
 }
 
 
