@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		314EECD91EA9675000A2EB05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 314EECD81EA9675000A2EB05 /* main.m */; };
+		314EECDC1EA9675000A2EB05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 314EECDB1EA9675000A2EB05 /* AppDelegate.m */; };
+		314EECDF1EA9675000A2EB05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314EECDE1EA9675000A2EB05 /* ViewController.m */; };
+		314EECE21EA9675000A2EB05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314EECE01EA9675000A2EB05 /* Main.storyboard */; };
+		314EECE41EA9675000A2EB05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314EECE31EA9675000A2EB05 /* Assets.xcassets */; };
+		314EECE71EA9675000A2EB05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314EECE51EA9675000A2EB05 /* LaunchScreen.storyboard */; };
+		314EECF21EA9675000A2EB05 /* WaugeTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 314EECF11EA9675000A2EB05 /* WaugeTestTests.m */; };
+		314EECFD1EA9675000A2EB05 /* WaugeTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 314EECFC1EA9675000A2EB05 /* WaugeTestUITests.m */; };
+		314EED0C1EA9678700A2EB05 /* WaugeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 314EED0B1EA9678700A2EB05 /* WaugeView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		314EECEE1EA9675000A2EB05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 314EECCC1EA9674F00A2EB05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 314EECD31EA9675000A2EB05;
+			remoteInfo = WaugeTest;
+		};
+		314EECF91EA9675000A2EB05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 314EECCC1EA9674F00A2EB05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 314EECD31EA9675000A2EB05;
+			remoteInfo = WaugeTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		314EECD41EA9675000A2EB05 /* WaugeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaugeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		314EECD81EA9675000A2EB05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		314EECDA1EA9675000A2EB05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		314EECDB1EA9675000A2EB05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		314EECDD1EA9675000A2EB05 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		314EECDE1EA9675000A2EB05 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		314EECE11EA9675000A2EB05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		314EECE31EA9675000A2EB05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		314EECE61EA9675000A2EB05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		314EECE81EA9675000A2EB05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		314EECED1EA9675000A2EB05 /* WaugeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaugeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		314EECF11EA9675000A2EB05 /* WaugeTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaugeTestTests.m; sourceTree = "<group>"; };
+		314EECF31EA9675000A2EB05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		314EECF81EA9675000A2EB05 /* WaugeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaugeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		314EECFC1EA9675000A2EB05 /* WaugeTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaugeTestUITests.m; sourceTree = "<group>"; };
+		314EECFE1EA9675000A2EB05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		314EED0A1EA9678700A2EB05 /* WaugeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaugeView.h; sourceTree = "<group>"; };
+		314EED0B1EA9678700A2EB05 /* WaugeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaugeView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		314EECD11EA9675000A2EB05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		314EECEA1EA9675000A2EB05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		314EECF51EA9675000A2EB05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		314EECCB1EA9674F00A2EB05 = {
+			isa = PBXGroup;
+			children = (
+				314EECD61EA9675000A2EB05 /* WaugeTest */,
+				314EECF01EA9675000A2EB05 /* WaugeTestTests */,
+				314EECFB1EA9675000A2EB05 /* WaugeTestUITests */,
+				314EECD51EA9675000A2EB05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		314EECD51EA9675000A2EB05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				314EECD41EA9675000A2EB05 /* WaugeTest.app */,
+				314EECED1EA9675000A2EB05 /* WaugeTestTests.xctest */,
+				314EECF81EA9675000A2EB05 /* WaugeTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		314EECD61EA9675000A2EB05 /* WaugeTest */ = {
+			isa = PBXGroup;
+			children = (
+				314EECDA1EA9675000A2EB05 /* AppDelegate.h */,
+				314EECDB1EA9675000A2EB05 /* AppDelegate.m */,
+				314EECDD1EA9675000A2EB05 /* ViewController.h */,
+				314EECDE1EA9675000A2EB05 /* ViewController.m */,
+				314EED0A1EA9678700A2EB05 /* WaugeView.h */,
+				314EED0B1EA9678700A2EB05 /* WaugeView.m */,
+				314EECE01EA9675000A2EB05 /* Main.storyboard */,
+				314EECE31EA9675000A2EB05 /* Assets.xcassets */,
+				314EECE51EA9675000A2EB05 /* LaunchScreen.storyboard */,
+				314EECE81EA9675000A2EB05 /* Info.plist */,
+				314EECD71EA9675000A2EB05 /* Supporting Files */,
+			);
+			path = WaugeTest;
+			sourceTree = "<group>";
+		};
+		314EECD71EA9675000A2EB05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				314EECD81EA9675000A2EB05 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		314EECF01EA9675000A2EB05 /* WaugeTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				314EECF11EA9675000A2EB05 /* WaugeTestTests.m */,
+				314EECF31EA9675000A2EB05 /* Info.plist */,
+			);
+			path = WaugeTestTests;
+			sourceTree = "<group>";
+		};
+		314EECFB1EA9675000A2EB05 /* WaugeTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				314EECFC1EA9675000A2EB05 /* WaugeTestUITests.m */,
+				314EECFE1EA9675000A2EB05 /* Info.plist */,
+			);
+			path = WaugeTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		314EECD31EA9675000A2EB05 /* WaugeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 314EED011EA9675000A2EB05 /* Build configuration list for PBXNativeTarget "WaugeTest" */;
+			buildPhases = (
+				314EECD01EA9675000A2EB05 /* Sources */,
+				314EECD11EA9675000A2EB05 /* Frameworks */,
+				314EECD21EA9675000A2EB05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaugeTest;
+			productName = WaugeTest;
+			productReference = 314EECD41EA9675000A2EB05 /* WaugeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		314EECEC1EA9675000A2EB05 /* WaugeTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 314EED041EA9675000A2EB05 /* Build configuration list for PBXNativeTarget "WaugeTestTests" */;
+			buildPhases = (
+				314EECE91EA9675000A2EB05 /* Sources */,
+				314EECEA1EA9675000A2EB05 /* Frameworks */,
+				314EECEB1EA9675000A2EB05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				314EECEF1EA9675000A2EB05 /* PBXTargetDependency */,
+			);
+			name = WaugeTestTests;
+			productName = WaugeTestTests;
+			productReference = 314EECED1EA9675000A2EB05 /* WaugeTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		314EECF71EA9675000A2EB05 /* WaugeTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 314EED071EA9675000A2EB05 /* Build configuration list for PBXNativeTarget "WaugeTestUITests" */;
+			buildPhases = (
+				314EECF41EA9675000A2EB05 /* Sources */,
+				314EECF51EA9675000A2EB05 /* Frameworks */,
+				314EECF61EA9675000A2EB05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				314EECFA1EA9675000A2EB05 /* PBXTargetDependency */,
+			);
+			name = WaugeTestUITests;
+			productName = WaugeTestUITests;
+			productReference = 314EECF81EA9675000A2EB05 /* WaugeTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		314EECCC1EA9674F00A2EB05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "http://tyronewing.top/";
+				TargetAttributes = {
+					314EECD31EA9675000A2EB05 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8RB35RM424;
+						ProvisioningStyle = Automatic;
+					};
+					314EECEC1EA9675000A2EB05 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8RB35RM424;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 314EECD31EA9675000A2EB05;
+					};
+					314EECF71EA9675000A2EB05 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8RB35RM424;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 314EECD31EA9675000A2EB05;
+					};
+				};
+			};
+			buildConfigurationList = 314EECCF1EA9674F00A2EB05 /* Build configuration list for PBXProject "WaugeTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 314EECCB1EA9674F00A2EB05;
+			productRefGroup = 314EECD51EA9675000A2EB05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				314EECD31EA9675000A2EB05 /* WaugeTest */,
+				314EECEC1EA9675000A2EB05 /* WaugeTestTests */,
+				314EECF71EA9675000A2EB05 /* WaugeTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		314EECD21EA9675000A2EB05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314EECE71EA9675000A2EB05 /* LaunchScreen.storyboard in Resources */,
+				314EECE41EA9675000A2EB05 /* Assets.xcassets in Resources */,
+				314EECE21EA9675000A2EB05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		314EECEB1EA9675000A2EB05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		314EECF61EA9675000A2EB05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		314EECD01EA9675000A2EB05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314EECDF1EA9675000A2EB05 /* ViewController.m in Sources */,
+				314EECDC1EA9675000A2EB05 /* AppDelegate.m in Sources */,
+				314EED0C1EA9678700A2EB05 /* WaugeView.m in Sources */,
+				314EECD91EA9675000A2EB05 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		314EECE91EA9675000A2EB05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314EECF21EA9675000A2EB05 /* WaugeTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		314EECF41EA9675000A2EB05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314EECFD1EA9675000A2EB05 /* WaugeTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		314EECEF1EA9675000A2EB05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 314EECD31EA9675000A2EB05 /* WaugeTest */;
+			targetProxy = 314EECEE1EA9675000A2EB05 /* PBXContainerItemProxy */;
+		};
+		314EECFA1EA9675000A2EB05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 314EECD31EA9675000A2EB05 /* WaugeTest */;
+			targetProxy = 314EECF91EA9675000A2EB05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		314EECE01EA9675000A2EB05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				314EECE11EA9675000A2EB05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		314EECE51EA9675000A2EB05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				314EECE61EA9675000A2EB05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		314EECFF1EA9675000A2EB05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		314EED001EA9675000A2EB05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		314EED021EA9675000A2EB05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = WaugeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = top.tyronewing.WaugeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		314EED031EA9675000A2EB05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = WaugeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = top.tyronewing.WaugeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		314EED051EA9675000A2EB05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = WaugeTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = top.tyronewing.WaugeTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaugeTest.app/WaugeTest";
+			};
+			name = Debug;
+		};
+		314EED061EA9675000A2EB05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = WaugeTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = top.tyronewing.WaugeTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaugeTest.app/WaugeTest";
+			};
+			name = Release;
+		};
+		314EED081EA9675000A2EB05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = WaugeTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = top.tyronewing.WaugeTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WaugeTest;
+			};
+			name = Debug;
+		};
+		314EED091EA9675000A2EB05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8RB35RM424;
+				INFOPLIST_FILE = WaugeTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = top.tyronewing.WaugeTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WaugeTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		314EECCF1EA9674F00A2EB05 /* Build configuration list for PBXProject "WaugeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				314EECFF1EA9675000A2EB05 /* Debug */,
+				314EED001EA9675000A2EB05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		314EED011EA9675000A2EB05 /* Build configuration list for PBXNativeTarget "WaugeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				314EED021EA9675000A2EB05 /* Debug */,
+				314EED031EA9675000A2EB05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		314EED041EA9675000A2EB05 /* Build configuration list for PBXNativeTarget "WaugeTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				314EED051EA9675000A2EB05 /* Debug */,
+				314EED061EA9675000A2EB05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		314EED071EA9675000A2EB05 /* Build configuration list for PBXNativeTarget "WaugeTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				314EED081EA9675000A2EB05 /* Debug */,
+				314EED091EA9675000A2EB05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 314EECCC1EA9674F00A2EB05 /* Project object */;
+}
