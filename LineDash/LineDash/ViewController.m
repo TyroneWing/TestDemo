@@ -23,20 +23,24 @@
     
     self.view.backgroundColor = [UIColor lightGrayColor];
     
-    ph = 0;
+    ph = 350;
     
     line = [[LineDashView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
     [self.view addSubview:line];
     
     
     
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(function:) userInfo:nil repeats:YES];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(function:) userInfo:nil repeats:YES];
 }
 
 
 - (void)function:(NSTimer *)timer
 {
-    
+    if (ph>0) {
+        ph -- ;
+    } else {
+        ph = 700;
+    }
     
     line.phase = ph;
 }
