@@ -223,18 +223,18 @@
     
     
     self.value = value;
-
+    
     if (animated) {
         needleLastMoved = duration;
     } else {
         needleLastMoved = 0.0;
-
+        
     }
     
     // 中间值
     double middleValue = lastValue + (((lastValue + (_value - lastValue) / 2.0) >= 0) ? (_value - lastValue) / 2.0 : (lastValue - _value) / 2.0);
     
-
+    
     
     animation.duration = needleLastMoved;
     animation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeRotation([self needleAngleForValue:lastValue]  , 0, 0, 1.0)],
@@ -245,7 +245,7 @@
     
     
     animationCompletion = completion;
-
+    
     
 }
 
@@ -481,7 +481,7 @@
 - (void)drawGauge:(CGContextRef)context
 {
     if (_showUnitOfMeasurement)
-            [self drawText:context];
+        [self drawText:context];
     [self drawScale:context];
     [self drawRangeLabels:context];
 }
@@ -496,7 +496,7 @@
 {
     [self initDrawingRects];
     [self initScale];
-//    [self setNeedsDisplay];
+    //    [self setNeedsDisplay];
 }
 
 
