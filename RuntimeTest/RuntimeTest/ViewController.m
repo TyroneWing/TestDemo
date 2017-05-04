@@ -73,11 +73,11 @@
     
     
     
-    UIAlertController *alertvc = [UIAlertController alertControllerWithTitle:@"test" message:@"=====" preferredStyle:UIAlertControllerStyleAlert];
-    
-    [self presentViewController:alertvc animated:YES completion:^{
-        
-    }];
+//    UIAlertController *alertvc = [UIAlertController alertControllerWithTitle:@"test" message:@"=====" preferredStyle:UIAlertControllerStyleAlert];
+//    [alertvc addAction:[[UIAlertAction alloc] performSelectorOnMainThread:<#(nonnull SEL)#> withObject:<#(nullable id)#> waitUntilDone:<#(BOOL)#>]]
+//    [self presentViewController:alertvc animated:YES completion:^{
+//
+//    }];
 
 }
 

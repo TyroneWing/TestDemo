@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DashLayer.h"
 
 @interface LineDashView : UIView
 
-@property (assign,nonatomic) CGFloat phase;
+//@property (assign,nonatomic) CGFloat phase;
+@property(nonatomic,strong)DashLayer *dashLayer;
+
+
 
 @end

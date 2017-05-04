@@ -16,6 +16,7 @@
 		192FB4121EAB50FC00EA06C5 /* LineDashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 192FB4111EAB50FC00EA06C5 /* LineDashTests.m */; };
 		192FB41D1EAB50FC00EA06C5 /* LineDashUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 192FB41C1EAB50FC00EA06C5 /* LineDashUITests.m */; };
 		192FB42C1EAB513500EA06C5 /* LineDashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 192FB42B1EAB513500EA06C5 /* LineDashView.m */; };
+		1945B92F1EAED79D0088513C /* DashLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1945B92E1EAED79D0088513C /* DashLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		192FB41E1EAB50FC00EA06C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		192FB42A1EAB513500EA06C5 /* LineDashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineDashView.h; sourceTree = "<group>"; };
 		192FB42B1EAB513500EA06C5 /* LineDashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineDashView.m; sourceTree = "<group>"; };
+		1945B92D1EAED79D0088513C /* DashLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashLayer.h; sourceTree = "<group>"; };
+		1945B92E1EAED79D0088513C /* DashLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				192FB3FE1EAB50FB00EA06C5 /* ViewController.m */,
 				192FB42A1EAB513500EA06C5 /* LineDashView.h */,
 				192FB42B1EAB513500EA06C5 /* LineDashView.m */,
+				1945B92D1EAED79D0088513C /* DashLayer.h */,
+				1945B92E1EAED79D0088513C /* DashLayer.m */,
 				192FB4001EAB50FB00EA06C5 /* Main.storyboard */,
 				192FB4031EAB50FB00EA06C5 /* Assets.xcassets */,
 				192FB4051EAB50FB00EA06C5 /* LaunchScreen.storyboard */,
@@ -278,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1945B92F1EAED79D0088513C /* DashLayer.m in Sources */,
 				192FB42C1EAB513500EA06C5 /* LineDashView.m in Sources */,
 				192FB3FF1EAB50FB00EA06C5 /* ViewController.m in Sources */,
 				192FB3FC1EAB50FB00EA06C5 /* AppDelegate.m in Sources */,
@@ -513,6 +519,7 @@
 				192FB4231EAB50FC00EA06C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		192FB4241EAB50FC00EA06C5 /* Build configuration list for PBXNativeTarget "LineDashTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +528,7 @@
 				192FB4261EAB50FC00EA06C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		192FB4271EAB50FC00EA06C5 /* Build configuration list for PBXNativeTarget "LineDashUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +537,7 @@
 				192FB4291EAB50FC00EA06C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

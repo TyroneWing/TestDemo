@@ -24,7 +24,7 @@
     
     
     _gaugeView = [[WaugeView alloc] initWithFrame:CGRectMake((self.view.bounds.size.width-200)/2, 50, 200, 200)];
-    _gaugeView.backgroundColor = [UIColor lightGrayColor];
+    _gaugeView.backgroundColor = [UIColor whiteColor];
     
 //    _gaugeView.scalePosition = 0.01;
     

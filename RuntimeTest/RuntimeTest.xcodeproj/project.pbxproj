@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190ABCB41EBB2A3800A960EA /* UIView+ExtendTouchRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 190ABCB31EBB2A3800A960EA /* UIView+ExtendTouchRect.m */; };
 		197312E81E97698B00B81041 /* NSArray+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = 197312E71E97698B00B81041 /* NSArray+Crash.m */; };
 		197312EB1E97835100B81041 /* testLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 197312EA1E97835100B81041 /* testLabel.m */; };
 		197611C11E8E4D3D0013188C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 197611C01E8E4D3D0013188C /* main.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		190ABCB21EBB2A3800A960EA /* UIView+ExtendTouchRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ExtendTouchRect.h"; sourceTree = "<group>"; };
+		190ABCB31EBB2A3800A960EA /* UIView+ExtendTouchRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ExtendTouchRect.m"; sourceTree = "<group>"; };
 		197312E61E97698B00B81041 /* NSArray+Crash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Crash.h"; sourceTree = "<group>"; };
 		197312E71E97698B00B81041 /* NSArray+Crash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Crash.m"; sourceTree = "<group>"; };
 		197312E91E97835100B81041 /* testLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testLabel.h; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				197611F21E8E4D510013188C /* test.png */,
 				197611F31E8E4D510013188C /* UIButton+Rect.h */,
 				197611F41E8E4D510013188C /* UIButton+Rect.m */,
+				190ABCB21EBB2A3800A960EA /* UIView+ExtendTouchRect.h */,
+				190ABCB31EBB2A3800A960EA /* UIView+ExtendTouchRect.m */,
 				197312E61E97698B00B81041 /* NSArray+Crash.h */,
 				197312E71E97698B00B81041 /* NSArray+Crash.m */,
 				31622B771EA03C33007B7740 /* UIAlertView+Block.h */,
@@ -297,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190ABCB41EBB2A3800A960EA /* UIView+ExtendTouchRect.m in Sources */,
 				31622B791EA03C34007B7740 /* UIAlertView+Block.m in Sources */,
 				197312EB1E97835100B81041 /* testLabel.m in Sources */,
 				197611C71E8E4D3D0013188C /* ViewController.m in Sources */,

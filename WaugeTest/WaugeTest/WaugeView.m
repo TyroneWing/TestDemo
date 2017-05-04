@@ -61,6 +61,8 @@
     CAKeyframeAnimation *animation;
 }
 
+
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -131,7 +133,49 @@
     [self setuplayer];
     
     [self anima];
+    
+    
+    UIPanGestureRecognizer *panGes = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panInCard:)];
+    [self addGestureRecognizer:panGes];
 }
+
+
+-(void)panInCard:(UIPanGestureRecognizer *)panGes{
+    
+    CGPoint touchPoint = [panGes locationInView:self];
+    
+    if (panGes.state == UIGestureRecognizerStateChanged) {
+        
+        CGFloat xFactor = MIN(1, MAX(-1,(touchPoint.x - (self.bounds.size.width/2)) / (self.bounds.size.width/2)));
+        CGFloat yFactor = MIN(1, MAX(-1,(touchPoint.y - (self.bounds.size.height/2)) / (self.bounds.size.height/2)));
+        
+        self.layer.transform = [self transformWithM34:1.0/-500 xf:xFactor yf:yFactor];
+//        cardParallaxView.layer.transform = [self transformWithM34:1.0/-250 xf:xFactor yf:yFactor];
+        
+        CGFloat zFactor = 180 * atan(yFactor/xFactor) / M_PI+90;
+        NSLog(@"%f",zFactor);
+        
+    }else if (panGes.state == UIGestureRecognizerStateEnded){
+        
+        [UIView animateWithDuration:0.3 animations:^{
+            self.layer.transform = CATransform3DIdentity;
+//            cardParallaxView.layer.transform = CATransform3DIdentity;
+        } completion:NULL];
+    }
+    
+}
+
+
+-(CATransform3D )transformWithM34:(CGFloat)m34 xf:(CGFloat)xf yf:(CGFloat)yf{
+    
+    CATransform3D t = CATransform3DIdentity;
+    t.m34  = m34;
+    t = CATransform3DRotate(t, M_PI/9 * yf, -1, 0, 0);
+    t = CATransform3DRotate(t, M_PI/9 * xf, 0, 1, 0);
+    return t;
+}
+
+
 
 
 - (void)drawRect:(CGRect)rect
