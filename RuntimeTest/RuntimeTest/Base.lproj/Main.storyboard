@@ -22,37 +22,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS开发工程师" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQC-QC-0nZ">
-                                <rect key="frame" x="34" y="112" width="114" height="21"/>
-                                <color key="backgroundColor" red="0.78039215689999997" green="0.85490196080000003" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS开发工程师" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49j-jV-fWP" customClass="testLabel">
-                                <rect key="frame" x="34" y="173" width="114" height="21"/>
-                                <color key="backgroundColor" red="0.78039215689999997" green="0.85490196080000003" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mm-aQ-4GB">
+                                <rect key="frame" x="71" y="70" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.58410711870274645" green="0.84146269709387089" blue="0.99106738644670389" alpha="0.55582242398648651" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="BEN-sN-vhd"/>
+                                    <constraint firstAttribute="height" constant="30" id="dgV-aO-r4e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="选取" image="ic_check_normal.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <state key="selected" image="ic_check_select.png"/>
+                                <connections>
+                                    <action selector="rectBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J22-cf-xgz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="49j-jV-fWP" firstAttribute="top" secondItem="aQC-QC-0nZ" secondAttribute="bottom" constant="40" id="0Mh-vo-FhL"/>
-                            <constraint firstItem="aQC-QC-0nZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="92" id="jDR-e0-TqU"/>
-                            <constraint firstItem="49j-jV-fWP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="k1v-4h-I3q"/>
-                            <constraint firstItem="aQC-QC-0nZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="vI3-T3-b2h"/>
+                            <constraint firstItem="2mm-aQ-4GB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="4pO-Vb-KKj"/>
+                            <constraint firstItem="2mm-aQ-4GB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="hpx-A0-u2l"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="aLabel" destination="aQC-QC-0nZ" id="SdJ-GX-bNB"/>
-                        <outlet property="bLabel" destination="49j-jV-fWP" id="Jda-wO-5LN"/>
+                        <outlet property="rectBtn" destination="2mm-aQ-4GB" id="KBt-AU-WWR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-306" y="116"/>
+            <point key="canvasLocation" x="-606" y="102"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_check_normal.png" width="30" height="30"/>
+        <image name="ic_check_select.png" width="30" height="30"/>
+    </resources>
 </document>

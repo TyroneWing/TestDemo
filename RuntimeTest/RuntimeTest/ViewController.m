@@ -8,78 +8,60 @@
 
 #import "ViewController.h"
 #import "UIButton+Rect.h"
-#import "testLabel.h"
-#import "UIAlertView+Block.h"
-
+//#import "UIAlertView+Block.h"
+#import "UIView+ExtendTouchRect.h"
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *aLabel;
-@property (weak, nonatomic) IBOutlet testLabel *bLabel;
+@property (weak, nonatomic) IBOutlet UIButton *rectBtn;
 
 @end
 
 @implementation ViewController
+- (IBAction)rectBtnClick:(UIButton *)sender {
+    
+    sender.selected = !sender.selected;
+//    self.rectBtn.imageRect = CGRectMake(50, 5, 20, 20);
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    self.rectBtn.imageRect = CGRectMake(5, 5, 20, 20);
+    self.rectBtn.titleRect = CGRectMake(30, 0, 50, 30);
+    self.rectBtn.touchExtendInset = UIEdgeInsetsMake(-20, -20, -20, -20);
+    
+    
+    
     //同时控制 ImageEdgeInsets 与 TitleEdgeInsets 会出现冲突，导致图片与文本不能按照需求显示在指定位置
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 100)];
-    btn.backgroundColor = [UIColor orangeColor];
-    btn.titleLabel.backgroundColor = [UIColor yellowColor];
-    [btn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 50, 150)];
-    [btn setTitleEdgeInsets:UIEdgeInsetsMake(55, 0, 20, 100)];
-    [btn setImage:[UIImage imageNamed:@"test.png"] forState:UIControlStateNormal];
-    [btn setTitle:@"没有使用Rect" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    //[self.view addSubview:btn];
     
-
-    UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake(100, 300, 200, 100)];
-    btn2.backgroundColor = [UIColor redColor];
-    btn2.imageRect = CGRectMake(0, 0, 50, 50);
-    btn2.titleRect = CGRectMake(0, 55, 100, 30);
-    btn2.titleLabel.backgroundColor = [UIColor yellowColor];
-    [btn2 setImage:[UIImage imageNamed:@"test.png"] forState:UIControlStateNormal];
-    [btn2 setTitle:@"使用Rect" forState:UIControlStateNormal];
-    [btn2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    //[self.view addSubview:btn2];
-    
-    
-    NSArray *arr = @[@"1",@"2",@"3"];
-    
-    NSLog(@"arr = %@",arr[1]);
-    
-    //[self doesNotRecognizeSelector];
-    
-    
-//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"test" message:@"======" delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
-//    [alert showUsingBlock:^(UIAlertView *alertView, NSInteger buttonIndex) {
-//        
-//        NSLog(@"buttonIndex = %ld",buttonIndex);
-//    }];
-
-   
-}
-
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-//    NSLog(@"touchesBegan ");
-//    _aLabel.text = @"touchesBegantouchesBegantouchesBegan";
-//    _bLabel.text = @"touchesBegantouchesBegantouchesBegan";
-    
-    
-    
-//    UIAlertController *alertvc = [UIAlertController alertControllerWithTitle:@"test" message:@"=====" preferredStyle:UIAlertControllerStyleAlert];
-//    [alertvc addAction:[[UIAlertAction alloc] performSelectorOnMainThread:<#(nonnull SEL)#> withObject:<#(nullable id)#> waitUntilDone:<#(BOOL)#>]]
-//    [self presentViewController:alertvc animated:YES completion:^{
+//    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 100)];
+//    btn.backgroundColor = [UIColor orangeColor];
+//    btn.titleLabel.backgroundColor = [UIColor yellowColor];
+//    [btn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 50, 150)];
+//    [btn setTitleEdgeInsets:UIEdgeInsetsMake(55, 0, 20, 100)];
+//    [btn setImage:[UIImage imageNamed:@"test.png"] forState:UIControlStateNormal];
+//    [btn setTitle:@"没有使用Rect" forState:UIControlStateNormal];
+//    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [self.view addSubview:btn];
 //
-//    }];
-
+//    
+//    UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake(100, 300, 200, 100)];
+//    btn2.backgroundColor = [UIColor redColor];
+//    btn2.imageRect = CGRectMake(0, 0, 50, 50);
+//    btn2.titleRect = CGRectMake(0, 55, 100, 30);
+//    btn2.titleLabel.backgroundColor = [UIColor yellowColor];
+//    [btn2 setImage:[UIImage imageNamed:@"test.png"] forState:UIControlStateNormal];
+//    [btn2 setTitle:@"使用Rect" forState:UIControlStateNormal];
+//    [btn2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [self.view addSubview:btn2];
+    
+    
+    
 }
+
+
 
 
 - (void)didReceiveMemoryWarning {

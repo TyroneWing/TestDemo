@@ -23,17 +23,13 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
     
     
-<<<<<<< HEAD
+
     [self runloopObserver];
     
 }
 
 
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    
-}
 
 
 
@@ -107,7 +103,7 @@
     NSString *NOTIFICATION_NAME = @"NOTIFICATION_NAME";
     NSLog(@"Current thread = %@", [NSThread currentThread]);
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotification:) name:NOTIFICATION_NAME object:nil];
-=======
+
 //    NSString *NOTIFICATION_NAME = @"NOTIFICATION_NAME";
 //    
 ////    NSLog(@"Current thread = %@", [NSThread currentThread]);
@@ -137,7 +133,6 @@
     // 启动
     //[thread start];
 
->>>>>>> bffd9dbb7d0873802270f775a44ae40101f28e32
 }
 
 -(void)taskB:(NSThread *)thread

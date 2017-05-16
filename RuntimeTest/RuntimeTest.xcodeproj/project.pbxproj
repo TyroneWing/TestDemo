@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		190ABCB41EBB2A3800A960EA /* UIView+ExtendTouchRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 190ABCB31EBB2A3800A960EA /* UIView+ExtendTouchRect.m */; };
-		197312E81E97698B00B81041 /* NSArray+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = 197312E71E97698B00B81041 /* NSArray+Crash.m */; };
-		197312EB1E97835100B81041 /* testLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 197312EA1E97835100B81041 /* testLabel.m */; };
 		197611C11E8E4D3D0013188C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 197611C01E8E4D3D0013188C /* main.m */; };
 		197611C41E8E4D3D0013188C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 197611C31E8E4D3D0013188C /* AppDelegate.m */; };
 		197611C71E8E4D3D0013188C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197611C61E8E4D3D0013188C /* ViewController.m */; };
@@ -18,8 +16,10 @@
 		197611CF1E8E4D3E0013188C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197611CD1E8E4D3E0013188C /* LaunchScreen.storyboard */; };
 		197611DA1E8E4D3E0013188C /* RuntimeTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 197611D91E8E4D3E0013188C /* RuntimeTestTests.m */; };
 		197611E51E8E4D3E0013188C /* RuntimeTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 197611E41E8E4D3E0013188C /* RuntimeTestUITests.m */; };
-		197611F51E8E4D510013188C /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 197611F21E8E4D510013188C /* test.png */; };
 		197611F61E8E4D510013188C /* UIButton+Rect.m in Sources */ = {isa = PBXBuildFile; fileRef = 197611F41E8E4D510013188C /* UIButton+Rect.m */; };
+		19DA4FA11EC5514F0017A912 /* UILabel+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DA4FA01EC5514F0017A912 /* UILabel+Ext.m */; };
+		19DA4FA71EC55CA50017A912 /* ic_check_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 19DA4FA51EC55CA50017A912 /* ic_check_normal.png */; };
+		19DA4FA81EC55CA50017A912 /* ic_check_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 19DA4FA61EC55CA50017A912 /* ic_check_select.png */; };
 		31622B791EA03C34007B7740 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 31622B781EA03C34007B7740 /* UIAlertView+Block.m */; };
 /* End PBXBuildFile section */
 
@@ -43,10 +43,6 @@
 /* Begin PBXFileReference section */
 		190ABCB21EBB2A3800A960EA /* UIView+ExtendTouchRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ExtendTouchRect.h"; sourceTree = "<group>"; };
 		190ABCB31EBB2A3800A960EA /* UIView+ExtendTouchRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ExtendTouchRect.m"; sourceTree = "<group>"; };
-		197312E61E97698B00B81041 /* NSArray+Crash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Crash.h"; sourceTree = "<group>"; };
-		197312E71E97698B00B81041 /* NSArray+Crash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Crash.m"; sourceTree = "<group>"; };
-		197312E91E97835100B81041 /* testLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testLabel.h; sourceTree = "<group>"; };
-		197312EA1E97835100B81041 /* testLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testLabel.m; sourceTree = "<group>"; };
 		197611BC1E8E4D3D0013188C /* RuntimeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuntimeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		197611C01E8E4D3D0013188C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		197611C21E8E4D3D0013188C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,9 +59,12 @@
 		197611E01E8E4D3E0013188C /* RuntimeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		197611E41E8E4D3E0013188C /* RuntimeTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeTestUITests.m; sourceTree = "<group>"; };
 		197611E61E8E4D3E0013188C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		197611F21E8E4D510013188C /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		197611F31E8E4D510013188C /* UIButton+Rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Rect.h"; sourceTree = "<group>"; };
 		197611F41E8E4D510013188C /* UIButton+Rect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Rect.m"; sourceTree = "<group>"; };
+		19DA4F9F1EC5514F0017A912 /* UILabel+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Ext.h"; sourceTree = "<group>"; };
+		19DA4FA01EC5514F0017A912 /* UILabel+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Ext.m"; sourceTree = "<group>"; };
+		19DA4FA51EC55CA50017A912 /* ic_check_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_check_normal.png; sourceTree = "<group>"; };
+		19DA4FA61EC55CA50017A912 /* ic_check_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_check_select.png; sourceTree = "<group>"; };
 		31622B771EA03C33007B7740 /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
 		31622B781EA03C34007B7740 /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,17 +121,16 @@
 				197611C31E8E4D3D0013188C /* AppDelegate.m */,
 				197611C51E8E4D3D0013188C /* ViewController.h */,
 				197611C61E8E4D3D0013188C /* ViewController.m */,
-				197312E91E97835100B81041 /* testLabel.h */,
-				197312EA1E97835100B81041 /* testLabel.m */,
-				197611F21E8E4D510013188C /* test.png */,
+				19DA4F9F1EC5514F0017A912 /* UILabel+Ext.h */,
+				19DA4FA01EC5514F0017A912 /* UILabel+Ext.m */,
 				197611F31E8E4D510013188C /* UIButton+Rect.h */,
 				197611F41E8E4D510013188C /* UIButton+Rect.m */,
 				190ABCB21EBB2A3800A960EA /* UIView+ExtendTouchRect.h */,
 				190ABCB31EBB2A3800A960EA /* UIView+ExtendTouchRect.m */,
-				197312E61E97698B00B81041 /* NSArray+Crash.h */,
-				197312E71E97698B00B81041 /* NSArray+Crash.m */,
 				31622B771EA03C33007B7740 /* UIAlertView+Block.h */,
 				31622B781EA03C34007B7740 /* UIAlertView+Block.m */,
+				19DA4FA51EC55CA50017A912 /* ic_check_normal.png */,
+				19DA4FA61EC55CA50017A912 /* ic_check_select.png */,
 				197611C81E8E4D3D0013188C /* Main.storyboard */,
 				197611CB1E8E4D3E0013188C /* Assets.xcassets */,
 				197611CD1E8E4D3E0013188C /* LaunchScreen.storyboard */,
@@ -274,10 +272,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DA4FA81EC55CA50017A912 /* ic_check_select.png in Resources */,
 				197611CF1E8E4D3E0013188C /* LaunchScreen.storyboard in Resources */,
+				19DA4FA71EC55CA50017A912 /* ic_check_normal.png in Resources */,
 				197611CC1E8E4D3E0013188C /* Assets.xcassets in Resources */,
 				197611CA1E8E4D3D0013188C /* Main.storyboard in Resources */,
-				197611F51E8E4D510013188C /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,12 +303,11 @@
 			files = (
 				190ABCB41EBB2A3800A960EA /* UIView+ExtendTouchRect.m in Sources */,
 				31622B791EA03C34007B7740 /* UIAlertView+Block.m in Sources */,
-				197312EB1E97835100B81041 /* testLabel.m in Sources */,
+				19DA4FA11EC5514F0017A912 /* UILabel+Ext.m in Sources */,
 				197611C71E8E4D3D0013188C /* ViewController.m in Sources */,
 				197611F61E8E4D510013188C /* UIButton+Rect.m in Sources */,
 				197611C41E8E4D3D0013188C /* AppDelegate.m in Sources */,
 				197611C11E8E4D3D0013188C /* main.m in Sources */,
-				197312E81E97698B00B81041 /* NSArray+Crash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

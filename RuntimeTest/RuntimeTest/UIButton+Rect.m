@@ -11,9 +11,6 @@
 
 @implementation UIButton (Rect)
 
-
-
-
 - (void)setImageRect:(CGRect)imageRect
 {
     objc_setAssociatedObject(self, @selector(imageRect), [NSValue valueWithCGRect:imageRect] , OBJC_ASSOCIATION_RETAIN_NONATOMIC);
